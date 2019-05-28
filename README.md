@@ -1,5 +1,7 @@
 # 974azhar
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/7de36339-4fa3-4503-831a-a728751621ea/deploy-status)](https://app.netlify.com/sites/trusting-albattani-906465/deploys)
+
 ## Project setup
 ```
 yarn install

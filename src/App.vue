@@ -21,7 +21,7 @@
 #nav {
   padding: 30px;
   a {
-    font-family: 'DisposableDroid BB';
+    font-family: 'disposabledroid_bbregular';
     color: #294e69;
     &.router-link-exact-active {
       color: #E04C55;
@@ -31,7 +31,7 @@
 }
 
 #brand {
-  font-family: 'DisposableDroid BB';
+  font-family: 'disposabledroid_bbregular';
   font-size: 50px;
 }
 
@@ -48,35 +48,48 @@ a {
 }
 
 @font-face {
-  font-family: 'DisposableDroid BB_Bold';
-  src: url('/assets/fonts/DisposableDroidBB-Bold.woff2') format('woff2'),
-  url('/assets/fonts/DisposableDroidBB-Bold.woff') format('woff');
-  font-weight: bold;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'DisposableDroid BB_Italic';
-  src: url('/assets/fonts/DisposableDroidBB-Italic.woff2') format('woff2'),
-  url('/assets/fonts/DisposableDroidBB-Italic.woff') format('woff');
-  font-weight: normal;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: 'DisposableDroid BB_BoldItalic';
-  src: url('/assets/fonts/DisposableDroidBB-BoldItalic.woff2') format('woff2'),
-  url('/assets/fonts/DisposableDroidBB-BoldItalic.woff') format('woff');
-  font-weight: bold;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: 'DisposableDroid BB';
-  src: url('/assets/fonts/DisposableDroidBB.woff2') format('woff2'),
-  url('/assets/fonts/DisposableDroidBB.woff') format('woff');
+  font-family: 'disposabledroid_bbbold';
+  src: url('/assets/fonts/disposabledroidbb_bld-webfont.woff2') format('woff2'),
+  url('/assets/fonts/disposabledroidbb_bld-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
+
+}
+
+
+
+
+@font-face {
+  font-family: 'disposabledroid_bbbold_italic';
+  src: url('/assets/fonts/disposabledroidbb_bldital-webfont.woff2') format('woff2'),
+  url('/assets/fonts/disposabledroidbb_bldital-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+
+
+@font-face {
+  font-family: 'disposabledroid_bbitalic';
+  src: url('/assets/fonts/disposabledroidbb_ital-webfont.woff2') format('woff2'),
+  url('/assets/fonts/disposabledroidbb_ital-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+
+
+@font-face {
+  font-family: 'disposabledroid_bbregular';
+  src: url('/assets/fonts/disposabledroidbb-webfont.woff2') format('woff2'),
+  url('/assets/fonts/disposabledroidbb-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
 }
 
 
