@@ -75,17 +75,17 @@
 
     #nav {
         position: fixed;
-        /*width: 100%;*/
+        z-index: 1000;
         top: 10px;
         left: 10px;
         right: 10px;
-        padding: 18px 18px 8px 18px;
+        padding: 16px 16px 6px 16px;
         border: 3px solid $color-dark;
         box-shadow: 0.2rem 0.2rem 0 $color-dark;
         background-color: white;
 
         a {
-            padding: 10px 26px 10px 0;
+            padding: 12px 22px 10px 0;
             font-family: 'disposabledroid_bbbold';
             font-size: 22px;
             color: $color-dark;
@@ -118,7 +118,7 @@
 
     #brand {
         font-family: 'disposabledroid_bbregular';
-        font-size: 45px;
+        font-size: 40px;
     }
 
     .moonstone-blue {

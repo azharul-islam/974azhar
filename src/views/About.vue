@@ -19,7 +19,7 @@
     padding: 18px;
 }
     .about {
-        margin: 150px 0 0 0;
+        margin: 135px 0 0 0;
     }
 
     p {
@@ -36,7 +36,6 @@
 
     img {
         border: 3px solid $color-dark;
-        box-shadow: 0.2rem 0.2rem 0 $color-dark;
         border-radius: 50%;
     }
 
