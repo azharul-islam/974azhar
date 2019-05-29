@@ -17,16 +17,25 @@
 
     $color-bg: rgba(28, 78, 108, 0.07);
     $color-dark: #1c4e6c;
+    $color-light: #36B1BF;
 
     #app {
-        font-family: 'Avenir', Helvetica, Arial, sans-serif;
+        font-family: Helvetica, Arial, sans-serif;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
         color: $color-dark;
     }
 
+    .container {
+        margin: 0px 10px 10px 10px;
+        background-color: white;
+        border: 3px solid $color-dark;
+        padding: 18px;
+    }
+
 
     body {
+        margin: 0px;
         background-color: #F4F4F4;
         background-image: linear-gradient(
                         45deg,
@@ -59,19 +68,20 @@
         }
     }
 
+    h1 {
+        font-family: 'disposabledroid_bbbold';
+    }
 
     #nav {
+        position: fixed;
+        /*width: 100%;*/
+        top: 10px;
+        left: 10px;
+        right: 10px;
         padding: 18px 18px 8px 18px;
-        /*box-shadow: 0 0 0 black;*/
         border: 3px solid $color-dark;
         box-shadow: 0.2rem 0.2rem 0 $color-dark;
-
-        transition: all 0.2s;
         background-color: white;
-
-        &:hover {
-            box-shadow: 0.4rem 0.4rem 0 $color-dark;
-        }
 
         a {
             padding: 10px 26px 10px 0;
