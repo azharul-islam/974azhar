@@ -4,9 +4,9 @@
             <div id="brand">
                 <span class="moonstone-blue">974</span>AZHAR
             </div>
-            <router-link to="/">/Blog</router-link>
-            <router-link to="/about">/AboutMe</router-link>
-            <router-link to="/portfolio">/Portfolio</router-link>
+            <router-link to="/" replace>/Blog</router-link>
+            <router-link to="/about" replace>/AboutMe</router-link>
+            <router-link to="/portfolio" replace>/Portfolio</router-link>
         </div>
         <router-view/>
     </div>
@@ -18,6 +18,7 @@
     $color-bg: rgba(28, 78, 108, 0.07);
     $color-dark: #1c4e6c;
     $color-light: #36B1BF;
+    $color-accent: #CA3041;
 
     #app {
         font-family: Helvetica, Arial, sans-serif;
@@ -30,6 +31,7 @@
         margin: 0px 10px 10px 10px;
         background-color: white;
         border: 3px solid $color-dark;
+        user-select: none;
     }
 
 
@@ -55,6 +57,10 @@
         background-size: 60px 60px;
         background-position: 0 0;
         animation: slide 4s infinite linear;
+    }
+
+    img {
+        border: 3px solid $color-dark;
     }
 
     @keyframes slide {
@@ -101,7 +107,7 @@
             }
 
             &:hover {
-                color: #36B1BF;
+                color: $color-light;
             }
 
             &:active {
@@ -122,7 +128,7 @@
     }
 
     .moonstone-blue {
-        color: #36B1BF
+        color:$color-light
     }
 
     a {
@@ -134,8 +140,12 @@
         }
 
         &:hover {
-            color: #36B1BF;
+            color:$color-light;
         }
+    }
+
+    .swiper-pagination-bullet-active {
+        background-color: $color-accent !important;
     }
 
 
@@ -145,7 +155,6 @@
         url('./assets/fonts/disposabledroidbb_bld-webfont.woff') format('woff');
         font-weight: normal;
         font-style: normal;
-
     }
 
     @font-face {
@@ -154,7 +163,6 @@
         url('./assets/fonts/disposabledroidbb_bldital-webfont.woff') format('woff');
         font-weight: normal;
         font-style: normal;
-
     }
 
     @font-face {
@@ -163,7 +171,6 @@
         url('./assets/fonts/disposabledroidbb_ital-webfont.woff') format('woff');
         font-weight: normal;
         font-style: normal;
-
     }
 
     @font-face {
@@ -172,7 +179,6 @@
         url('./assets/fonts/disposabledroidbb-webfont.woff') format('woff');
         font-weight: normal;
         font-style: normal;
-
     }
 
 </style>

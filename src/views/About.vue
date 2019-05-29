@@ -35,7 +35,6 @@
     }
 
     img {
-        border: 3px solid $color-dark;
         border-radius: 50%;
     }
 

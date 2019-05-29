@@ -16,6 +16,5 @@ export default {
 
 <style lang="scss">
 .blog {
-  background-color: #F4F4F4;
 }
 </style>
