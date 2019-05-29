@@ -11,8 +11,8 @@
                 <p>Android app developed for a media company that provides services like promotions, video productions & social media influencers coverage.</p>
                 <swiper :options="swiperOption" ref="mySwiper" @someSwiperEvent="callback">
                     <!-- slides -->
-                    <swiper-slide class="swiper-item swiper-lazy"><img src="../assets/portfolio/alaqat/1.jpg" alt=""></swiper-slide>
-                    <swiper-slide  class="swiper-item swiper-lazy"><img src="../assets/portfolio/alaqat/2.jpg" alt=""></swiper-slide>
+                    <swiper-slide class="swiper-item swiper-lazy"><img src="../assets/portfolio/alaqat/1.jpg" alt=""> <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div></swiper-slide>
+                    <swiper-slide  class="swiper-item swiper-lazy"><img src="../assets/portfolio/alaqat/2.jpg" alt=""> <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div></swiper-slide>
                     <!-- Optional controls -->
                     <div class="swiper-pagination"  slot="pagination"></div>
                 </swiper>
