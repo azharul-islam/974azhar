@@ -15,7 +15,9 @@
 <style lang="scss" scoped>
     $color-dark: #1c4e6c;
 
-
+.container {
+    padding: 18px;
+}
     .about {
         margin: 150px 0 0 0;
     }

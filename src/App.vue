@@ -30,7 +30,6 @@
         margin: 0px 10px 10px 10px;
         background-color: white;
         border: 3px solid $color-dark;
-        padding: 18px;
     }
 
 
@@ -68,9 +67,11 @@
         }
     }
 
-    h1 {
+    h1, h2, h3, h4, h5, h6 {
         font-family: 'disposabledroid_bbbold';
     }
+
+    /*h1 { font-size: 1.8em;}*/
 
     #nav {
         position: fixed;
@@ -86,7 +87,7 @@
         a {
             padding: 10px 26px 10px 0;
             font-family: 'disposabledroid_bbbold';
-            font-size: 24px;
+            font-size: 22px;
             color: $color-dark;
             text-decoration: none;
             display: inline-block;
@@ -117,7 +118,7 @@
 
     #brand {
         font-family: 'disposabledroid_bbregular';
-        font-size: 50px;
+        font-size: 45px;
     }
 
     .moonstone-blue {

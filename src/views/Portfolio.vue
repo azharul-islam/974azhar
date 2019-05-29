@@ -1,15 +1,40 @@
 <template>
     <div class="about">
         <div class="container">
-            <h1>Mobile Apps</h1>
+            <h2>Mobile Apps</h2>
+            <hr>
+            <h3>Alaqat</h3>
+            <hr>
+            <h3>Droobi</h3>
+            <hr>
+            <h3>Passwordless</h3>
+            <hr>
+            <h3>Smart Transportation</h3>
+            <hr>
+            <h3>Discs Watchface</h3>
+            <hr>
+
         </div>
         <div class="container">
-            <h1>Web Apps</h1>
-        </div><div class="container">
-            <h1>Game Design</h1>
+            <h2>Web Apps/Sites</h2>
         </div>
         <div class="container">
-            <h1>Miscellaneous</h1>
+            <h2>Photography</h2>
+        </div>
+        <div class="container">
+            <h2>Logo Design</h2>
+        </div>
+        <div class="container">
+            <h2>3D Modelling</h2>
+        </div>
+        <div class="container">
+            <h2>Brochure Design</h2>
+        </div>
+        <div class="container">
+            <h2>Game Design</h2>
+        </div>
+        <div class="container">
+            <h2>Miscellaneous</h2>
         </div>
     </div>
 </template>
@@ -26,9 +51,17 @@
         font-size: 18px;
     }
 
-    h1 {
-        margin-block-start: 0.3em;
-        margin-block-end: 0.3em;
+    h1, h2, h3 {
+        margin-block-start: 0em;
+        margin-block-end: 0em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        padding: 18px;
+    }
+
+    hr {
+        margin-block-start: 0em;
+        margin-block-end: 0em;
         margin-inline-start: 0px;
         margin-inline-end: 0px;
     }
