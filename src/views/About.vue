@@ -1,5 +1,13 @@
 <template>
   <div class="about">
-    <h1>This is an about page</h1>
+    <p>Hi, I'm Azharul Islam, grew up in Qatar. </p>
   </div>
 </template>
+
+<style lang="scss">
+
+  p {
+    padding: 10px 30px;
+  }
+
+</style>

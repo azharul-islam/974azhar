@@ -1,5 +1,5 @@
 <template>
-  <div class="home">
+  <div class="blog">
 
   </div>
 </template>
@@ -15,5 +15,7 @@ export default {
 </script>
 
 <style lang="scss">
-
+.blog {
+  background-color: #F4F4F4;
+}
 </style>
