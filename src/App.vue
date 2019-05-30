@@ -82,12 +82,12 @@
     #nav {
         position: fixed;
         z-index: 1000;
-        top: 10px;
-        left: 10px;
-        right: 10px;
+        top: 7px;
+        left: 7px;
+        right: 7px;
         padding: 16px 16px 6px 16px;
         border: 3px solid $color-dark;
-        box-shadow: 0.25rem 0.25rem 0 $color-dark;
+        box-shadow: 0.22rem 0.22rem 0 $color-dark;
         background-color: white;
 
         a {
@@ -128,7 +128,7 @@
     }
 
     .moonstone-blue {
-        color:$color-light
+        color: $color-light
     }
 
     a {
@@ -140,8 +140,16 @@
         }
 
         &:hover {
-            color:$color-light;
+            color: $color-light;
         }
+    }
+
+    .swiper-pagination-bullet {
+        width: 6px !important;
+        height: 6px !important;
+        background: white !important;
+        opacity: 1 !important;
+        border: 1px solid $color-dark !important;
     }
 
     .swiper-pagination-bullet-active {
