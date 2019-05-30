@@ -1,6 +1,6 @@
 <template>
     <div id="app">
-        <div id="nav">
+        <div id="nav" v-scroll="handleScroll">
             <div id="brand">
                 <span class="moonstone-blue">974</span>AZHAR
             </div>
@@ -11,7 +11,45 @@
         <router-view/>
     </div>
 </template>
+<script>
 
+    export default {
+        name: 'Portfolio',
+        props: {},
+        data: function () {
+            return {
+                toggles: [false, false, false, false, false, false, false, false],
+                heights: ['0', '0', '0', '0', '0', '0', '0', '0'],
+                swiperOption: {
+                    pagination: {
+                        el: '.swiper-pagination',
+                        clickable: true
+                    },
+                    navigation: {
+                        nextEl: '.swiper-button-next',
+                        prevEl: '.swiper-button-prev',
+                    },
+                    slidesPerView: 'auto',
+                    centeredSlides: true,
+
+                }
+            }
+        },
+        methods: {
+            handleScroll: function (evt, el) {
+                if (window.scrollY > 50) {
+                    el.setAttribute(
+                        'style',
+                        'opacity: 1; transform: translate3d(0, -10px, 0)'
+                    )
+                }
+                return window.scrollY > 100
+            }
+
+        }
+
+    }
+</script>
 
 <style lang="scss">
 
