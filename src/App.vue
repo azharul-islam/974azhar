@@ -87,7 +87,7 @@
         right: 10px;
         padding: 16px 16px 6px 16px;
         border: 3px solid $color-dark;
-        box-shadow: 0.2rem 0.2rem 0 $color-dark;
+        box-shadow: 0.25rem 0.25rem 0 $color-dark;
         background-color: white;
 
         a {
@@ -145,7 +145,7 @@
     }
 
     .swiper-pagination-bullet-active {
-        background-color: $color-accent !important;
+        background-color: $color-dark !important;
     }
 
 

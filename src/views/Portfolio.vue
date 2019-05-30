@@ -8,19 +8,27 @@
             <div ref="a" class="collapsible" :style="{maxHeight: heights[0]}">
                 <hr>
                 <h3>Alaqat</h3>
-                <p>Android app developed for a media company that provides services like promotions, video productions & social media influencers coverage.</p>
+                <p>Android app developed for a media company that provides services like promotions, video productions &
+                    social media influencers coverage.</p>
                 <swiper :options="swiperOption" ref="mySwiper" @someSwiperEvent="callback">
-                    <!-- slides -->
-                    <swiper-slide class="swiper-item swiper-lazy"><img src="../assets/portfolio/alaqat/1.jpg" alt=""> <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div></swiper-slide>
-                    <swiper-slide  class="swiper-item swiper-lazy"><img src="../assets/portfolio/alaqat/2.jpg" alt=""> <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div></swiper-slide>
-                    <!-- Optional controls -->
-                    <div class="swiper-pagination"  slot="pagination"></div>
+                    <swiper-slide class="swiper-item"><img src="../assets/portfolio/alaqat/1.jpg" alt="">
+                    </swiper-slide>
+                    <swiper-slide class="swiper-item"><img src="../assets/portfolio/alaqat/2.jpg" alt="">
+                    </swiper-slide>
+                    <div class="swiper-pagination" slot="pagination"></div>
                 </swiper>
                 <hr>
                 <h3>Droobi</h3>
                 <p>An app designed & developed by me during my full-
                     time position at Droobi Health. It was an mHealth
                     mobile app for Diabetes Management.</p>
+                <swiper :options="swiperOption" ref="mySwiper" @someSwiperEvent="callback">
+                    <swiper-slide class="swiper-item"><img src="../assets/portfolio/alaqat/1.jpg" alt="">
+                    </swiper-slide>
+                    <swiper-slide class="swiper-item"><img src="../assets/portfolio/alaqat/2.jpg" alt="">
+                    </swiper-slide>
+                    <div class="swiper-pagination" slot="pagination"></div>
+                </swiper>
                 <hr>
                 <h3>Passwordless</h3>
                 <p>An app designed & developed by me for Senior Design
@@ -177,8 +185,8 @@
                         nextEl: '.swiper-button-next',
                         prevEl: '.swiper-button-prev',
                     },
-                    spaceBetween: 20,
                     slidesPerView: 'auto',
+                    centeredSlides: true,
 
                 }
             }
@@ -196,49 +204,49 @@
                         }
                         break;
                     case 1:
-                         if (this.toggles[value]) {
+                        if (this.toggles[value]) {
                             this.$set(this.heights, value, '0');
                         } else {
                             this.$set(this.heights, value, this.$refs.b.scrollHeight + 'px')
                         }
                         break;
                     case 2:
-                         if (this.toggles[value]) {
+                        if (this.toggles[value]) {
                             this.$set(this.heights, value, '0');
                         } else {
                             this.$set(this.heights, value, this.$refs.c.scrollHeight + 'px')
                         }
                         break;
                     case 3:
-                         if (this.toggles[value]) {
+                        if (this.toggles[value]) {
                             this.$set(this.heights, value, '0');
                         } else {
                             this.$set(this.heights, value, this.$refs.d.scrollHeight + 'px')
                         }
                         break;
                     case 4:
-                         if (this.toggles[value]) {
+                        if (this.toggles[value]) {
                             this.$set(this.heights, value, '0');
                         } else {
                             this.$set(this.heights, value, this.$refs.e.scrollHeight + 'px')
                         }
                         break;
                     case 5:
-                         if (this.toggles[value]) {
+                        if (this.toggles[value]) {
                             this.$set(this.heights, value, '0');
                         } else {
                             this.$set(this.heights, value, this.$refs.f.scrollHeight + 'px')
                         }
                         break;
                     case 6:
-                         if (this.toggles[value]) {
+                        if (this.toggles[value]) {
                             this.$set(this.heights, value, '0');
                         } else {
                             this.$set(this.heights, value, this.$refs.g.scrollHeight + 'px')
                         }
                         break;
                     case 7:
-                         if (this.toggles[value]) {
+                        if (this.toggles[value]) {
                             this.$set(this.heights, value, '0');
                         } else {
                             this.$set(this.heights, value, this.$refs.h.scrollHeight + 'px')
@@ -266,8 +274,11 @@
     }
 
     img {
-        border: none;
-        max-width: 100%;
+        /*border: none;*/
+        max-width: 90%;
+        margin-bottom: 30px;
+        margin-left: 5%;
+        border: 2px solid $color-dark;
     }
 
     p {
@@ -291,7 +302,7 @@
         }
     }
 
-    h1, h2, h3{
+    h1, h2, h3 {
         margin-block-start: 0em;
         margin-block-end: 0em;
         margin-inline-start: 0px;
@@ -312,9 +323,11 @@
     .collapser {
         cursor: pointer;
         -webkit-tap-highlight-color: transparent;
+
     }
 
     .collapsible {
+        background-color: #F4F4F4;
         max-height: 0;
         overflow: hidden;
         transition: max-height 0.25s ease-in-out;
@@ -346,10 +359,6 @@
     .chevron.toggled:before {
         transform: rotate(-45deg);
         top: 0.25em;
-    }
-
-    .swiper-pagination-bullet-active {
-        background-color: $color-dark !important;
     }
 
 </style>
