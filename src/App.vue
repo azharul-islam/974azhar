@@ -112,8 +112,6 @@
         font-family: 'disposabledroid_bbbold';
     }
 
-    /*h1 { font-size: 1.8em;}*/
-
     #nav {
         position: fixed;
         z-index: 1000;

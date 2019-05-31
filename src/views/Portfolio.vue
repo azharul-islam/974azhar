@@ -6,7 +6,7 @@
                 :class="{toggled: toggles[0]}"></span>
         </h2>
         <div ref="a" class="collapsible" :class="{expanded: toggles[0]}" :style="{maxHeight: heights[0]}">
-            <h3>Alaqat</h3>
+            <h3>#1 Alaqat</h3>
             <p>Android app developed for a media company that provides services like promotions, video productions &
                 social media influencers coverage.</p>
             <swiper :options="swiperOption" ref="mySwiper">
@@ -17,9 +17,8 @@
                 <div class="swiper-pagination" slot="pagination"></div>
             </swiper>
             <hr>
-            <h3>Droobi</h3>
-            <p>An app designed & developed by me during my full-
-                time position at Droobi Health. It was an mHealth
+            <h3>#2 Droobi</h3>
+            <p>An app designed & developed by me during my full-time position at Droobi Health. It was an mHealth
                 mobile app for Diabetes Management.</p>
             <swiper :options="swiperOption" ref="mySwiper" >
                 <swiper-slide class="swiper-item"><img src="../assets/portfolio/droobi/1.jpg" alt="">
@@ -28,7 +27,7 @@
                 <div class="swiper-pagination" slot="pagination"></div>
             </swiper>
             <hr>
-            <h3>Passwordless</h3>
+            <h3>#3 Passwordless</h3>
             <p>An app designed & developed by me for Senior Design
                 Project, that allowed logging into any website just
                 like Whatsapp Web, taking into account multiple
@@ -39,7 +38,7 @@
                 <div class="swiper-pagination" slot="pagination"></div>
             </swiper>
             <hr>
-            <h3>Smart Transportation</h3>
+            <h3>#4 Smart Transportation</h3>
             <p>An app designed & developed by me that allowed a
                 bus driver to track his/her location and student to
                 monitor locations of all buses, in realtime.</p>
@@ -51,7 +50,7 @@
                 <div class="swiper-pagination" slot="pagination"></div>
             </swiper>
             <hr>
-            <h3>Discs Watchface</h3>
+            <h3>#5 Discs Watchface</h3>
             <p>Watchface designed and developed by me as a side
                 project. It was then deployed to Play Store for
                 Android wear compatible smartwatches. Also, the
@@ -295,13 +294,18 @@
     }
 
     p {
-        font-family: 'disposabledroid_bbregular', sans-serif;
-        font-size: 18px;
+        font-family: 'Roboto Slab', serif;
+        /*font-family: 'disposabledroid_bbregular', serif;*/
+        /*font-size: 17px;*/
+        /*line-height: 1.4;*/
+
+        font-size: 14px;
+        line-height: 1.6;
         margin-block-start: 0em;
         margin-block-end: 0em;
         margin-inline-start: 0px;
         margin-inline-end: 0px;
-        padding: 0px 18px 18px;
+        padding: 2px 12px 14px;
     }
 
 
@@ -310,11 +314,16 @@
         margin-block-end: 0em;
         margin-inline-start: 0px;
         margin-inline-end: 0px;
-        padding: 16px;
+        padding: 12px;
     }
 
     h2 {
         font-size: 1.3em;
+    }
+
+    h3 {
+        font-size: 1.2em;
+
     }
 
     hr {

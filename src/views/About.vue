@@ -28,7 +28,7 @@
     }
 
     h1 {
-        margin-block-start: 0.3em;
+        margin-block-start: 0em;
         margin-block-end: 0.3em;
         margin-inline-start: 0px;
         margin-inline-end: 0px;
