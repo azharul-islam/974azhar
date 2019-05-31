@@ -76,6 +76,13 @@
         </h2>
         <div ref="b" class="collapsible" :class="{expanded: toggles[1]}" :style="{maxHeight: heights[1]}">
             <h3>titanium.com.bd</h3>
+            <swiper :options="swiperOption" ref="mySwiper" >
+                <swiper-slide class="swiper-item"><img src="../assets/portfolio/titanium/1.gif" alt="" style="padding: 10px 36px; background-color: white">
+                </swiper-slide>
+
+                <div class="swiper-pagination" slot="pagination"></div>
+            </swiper>
+
             <hr>
             <h3>qqqsite.com</h3>
             <hr>
@@ -322,7 +329,7 @@
     }
 
     h3 {
-        font-size: 1.2em;
+        font-size: 1.25em;
 
     }
 

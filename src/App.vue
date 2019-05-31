@@ -64,6 +64,7 @@
         background-color: white;
         border: 2px solid $color-dark;
         user-select: none;
+        /*max-width: 1000px;*/
     }
 
     .minimized {
