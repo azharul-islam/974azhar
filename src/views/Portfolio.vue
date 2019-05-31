@@ -75,7 +75,7 @@
                     :class="{toggled: toggles[1]}"></span>
         </h2>
         <div ref="b" class="collapsible" :class="{expanded: toggles[1]}" :style="{maxHeight: heights[1]}">
-            <h3>titanium.com.bd</h3>
+            <h3>#1 titanium.com.bd</h3>
             <p>Landing page for an LED lighting manufacturer in Bangladesh. Designed and developed by me.</p>
             <p><b>Technology:</b> Vue.JS, CSS Grid, Flexbox, Netlify hosting and CDN with Continuous Integration,
                 Firestore</p>
@@ -97,7 +97,7 @@
             </swiper>
 
             <hr>
-            <h3>qqqsite.com</h3>
+            <h3>#2 qqqsite.com</h3>
             <p>Website designed and developed for a comedian/social media influencer. </p>
             <swiper :options="swiperOption" ref="mySwiper">
                 <swiper-slide class="swiper-item"><img src="../assets/portfolio/qqq/qqq.gif" alt=""
@@ -122,13 +122,67 @@
                 <div class="swiper-pagination" slot="pagination"></div>
             </swiper>
             <hr>
-            <h3>droobihealth.com</h3>
+            <h3>#3 droobihealth.com</h3>
+            <p>Landing page for Droobi Health.</p>
+            <swiper :options="swiperOption" ref="mySwiper">
+                <swiper-slide class="swiper-item"><img src="../assets/portfolio/droobiweb/1.jpg" alt=""
+                >
+                </swiper-slide>
+                <swiper-slide class="swiper-item"><img src="../assets/portfolio/droobiweb/2.jpg" alt=""
+                >
+                </swiper-slide>
+                <div class="swiper-pagination" slot="pagination"></div>
+            </swiper>
             <hr>
-            <h3>dta.qa</h3>
+            <h3>#4 Intervention Messages Algorithm Simulator</h3>
+            <p>At Droobi Health W.L.L., while we were working on an algorithm for sending out notification, intervention
+                and reminder messages, I had developed a simulator to help better understand the flow and allow easier
+                explanation to stakeholders during presentations.</p>
+            <swiper :options="swiperOption" ref="mySwiper">
+                <swiper-slide class="swiper-item"><img src="../assets/portfolio/web_droobialgorithmsimulator/1.jpg"
+                                                       alt=""
+                >
+                </swiper-slide>
+                <swiper-slide class="swiper-item"><img src="../assets/portfolio/web_droobialgorithmsimulator/2.jpg"
+                                                       alt=""
+                >
+                </swiper-slide>
+                <div class="swiper-pagination" slot="pagination"></div>
+            </swiper>
             <hr>
-            <h3>Intervention Messages Algorithm Simulator</h3>
+            <h3>#5 Card Printer</h3>
+            <p>A reactive web app developed for printing serial numbers on pre-printed warranty cards. </p>
+
+            <p>Tech Stack
+                HTML, CSS, Flexbox, Javascript, Vue.JS</p>
+            <swiper :options="swiperOption" ref="mySwiper">
+                <swiper-slide class="swiper-item"><img src="../assets/portfolio/web_warrantyprinter/1.jpg"
+                                                       alt=""
+                >
+                </swiper-slide>
+                <swiper-slide class="swiper-item"><img src="../assets/portfolio/web_warrantyprinter/2.jpg"
+                                                       alt=""
+                >
+                </swiper-slide>
+                <div class="swiper-pagination" slot="pagination"></div>
+            </swiper>
             <hr>
-            <h3>Card Printer</h3>
+            <h3>#6 ERP</h3>
+            <p>A web-based ERP customized and implemented.</p>
+
+            <p>Tech Stack
+                HTML, CSS, Flexbox, Javascript, Vue.JS</p>
+            <swiper :options="swiperOption" ref="mySwiper">
+                <swiper-slide class="swiper-item"><img src="../assets/portfolio/web_warrantyprinter/1.jpg"
+                                                       alt=""
+                >
+                </swiper-slide>
+                <swiper-slide class="swiper-item"><img src="../assets/portfolio/web_warrantyprinter/2.jpg"
+                                                       alt=""
+                >
+                </swiper-slide>
+                <div class="swiper-pagination" slot="pagination"></div>
+            </swiper>
         </div>
 
 
@@ -210,15 +264,11 @@
                     :class="{toggled: toggles[7]}"></span>
         </h2>
         <div ref="h" class="collapsible" :class="{expanded: toggles[7]}" :style="{maxHeight: heights[7]}">
-            <h3>Alaqat</h3>
+            <h3>Print Formats Design and Development</h3>
             <hr>
-            <h3>Droobi</h3>
+            <h3>Business Cards Design</h3>
             <hr>
-            <h3>Passwordless</h3>
-            <hr>
-            <h3>Smart Transportation</h3>
-            <hr>
-            <h3>Discs Watchface</h3>
+            <h3>Map Art</h3>
         </div>
     </div>
 </template>
