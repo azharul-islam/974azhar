@@ -20,7 +20,7 @@
             <h3>#2 Droobi</h3>
             <p>An app designed & developed by me during my full-time position at Droobi Health. It was an mHealth
                 mobile app for Diabetes Management.</p>
-            <swiper :options="swiperOption" ref="mySwiper" >
+            <swiper :options="swiperOption" ref="mySwiper">
                 <swiper-slide class="swiper-item"><img src="../assets/portfolio/droobi/1.jpg" alt="">
                 </swiper-slide>
 
@@ -32,7 +32,7 @@
                 Project, that allowed logging into any website just
                 like Whatsapp Web, taking into account multiple
                 factors like location, time, etc.</p>
-            <swiper :options="swiperOption" ref="mySwiper" >
+            <swiper :options="swiperOption" ref="mySwiper">
                 <swiper-slide class="swiper-item"><img src="../assets/portfolio/passwordless/1.jpg" alt="">
                 </swiper-slide>
                 <div class="swiper-pagination" slot="pagination"></div>
@@ -42,7 +42,7 @@
             <p>An app designed & developed by me that allowed a
                 bus driver to track his/her location and student to
                 monitor locations of all buses, in realtime.</p>
-            <swiper :options="swiperOption" ref="mySwiper" >
+            <swiper :options="swiperOption" ref="mySwiper">
                 <swiper-slide class="swiper-item"><img src="../assets/portfolio/smarttransportation/1.jpg" alt="">
                 </swiper-slide>
                 <swiper-slide class="swiper-item"><img src="../assets/portfolio/smarttransportation/2.jpg" alt="">
@@ -56,7 +56,7 @@
                 Android wear compatible smartwatches. Also, the
                 promos here were photographed, edited and/or
                 designed by me.</p>
-            <swiper :options="swiperOption" ref="mySwiper" >
+            <swiper :options="swiperOption" ref="mySwiper">
                 <swiper-slide class="swiper-item"><img src="../assets/portfolio/discs/1.jpg" alt="">
                 </swiper-slide>
                 <swiper-slide class="swiper-item"><img src="../assets/portfolio/discs/2.jpg" alt="">
@@ -76,8 +76,21 @@
         </h2>
         <div ref="b" class="collapsible" :class="{expanded: toggles[1]}" :style="{maxHeight: heights[1]}">
             <h3>titanium.com.bd</h3>
-            <swiper :options="swiperOption" ref="mySwiper" >
-                <swiper-slide class="swiper-item"><img src="https://giphy.com/gifs/ZXC7ZrfNVZqlD9aDwC/html5" alt="" style="padding: 10px 36px; background-color: white">
+            <p>Landing page for an LED lighting manufacturer in Bangladesh. Designed and developed by me.</p>
+            <p><b>Technology:</b> Vue.JS, CSS Grid, Flexbox, Netlify hosting and CDN with Continuous Integration,
+                Firestore</p>
+            <swiper :options="swiperOption" ref="mySwiper">
+                <swiper-slide class="swiper-item"><img src="../assets/portfolio/titanium/1.gif" alt=""
+                                                       style="padding: 10px 36px; background-color: white">
+                </swiper-slide>
+                <swiper-slide class="swiper-item"><img src="../assets/portfolio/titanium/2.jpg" alt=""
+                                                       style="padding: 10px 36px; background-color: white">
+                </swiper-slide>
+                <swiper-slide class="swiper-item"><img src="../assets/portfolio/titanium/3.jpg" alt=""
+                                                       style="padding: 10px 36px; background-color: white">
+                </swiper-slide>
+                <swiper-slide class="swiper-item"><img src="../assets/portfolio/titanium/4.jpg" alt=""
+                                                       style="padding: 10px 36px; background-color: white">
                 </swiper-slide>
 
                 <div class="swiper-pagination" slot="pagination"></div>
@@ -85,6 +98,29 @@
 
             <hr>
             <h3>qqqsite.com</h3>
+            <p>Website designed and developed for a comedian/social media influencer. </p>
+            <swiper :options="swiperOption" ref="mySwiper">
+                <swiper-slide class="swiper-item"><img src="../assets/portfolio/qqq/qqq.gif" alt=""
+                                                       style="padding: 10px 36px; background-color: white">
+                </swiper-slide>
+                <swiper-slide class="swiper-item"><img src="../assets/portfolio/qqq/1.jpg" alt=""
+                                                       style="padding: 10px 36px; background-color: white">
+                </swiper-slide>
+                <swiper-slide class="swiper-item"><img src="../assets/portfolio/qqq/2.jpg" alt=""
+                                                       style="padding: 10px 36px; background-color: white">
+                </swiper-slide>
+                <swiper-slide class="swiper-item"><img src="../assets/portfolio/qqq/3.jpg" alt=""
+                                                       style="padding: 10px 36px; background-color: white">
+                </swiper-slide>
+                <swiper-slide class="swiper-item"><img src="../assets/portfolio/qqq/4.jpg" alt=""
+                                                       style="padding: 10px 36px; background-color: white">
+                </swiper-slide>
+                <swiper-slide class="swiper-item"><img src="../assets/portfolio/qqq/5.jpg" alt=""
+                                                       style="padding: 10px 36px; background-color: white">
+                </swiper-slide>
+
+                <div class="swiper-pagination" slot="pagination"></div>
+            </swiper>
             <hr>
             <h3>droobihealth.com</h3>
             <hr>
