@@ -9,7 +9,7 @@
             <h3>Alaqat</h3>
             <p>Android app developed for a media company that provides services like promotions, video productions &
                 social media influencers coverage.</p>
-            <swiper :options="swiperOption" ref="mySwiper" @someSwiperEvent="callback">
+            <swiper :options="swiperOption" ref="mySwiper">
                 <swiper-slide class="swiper-item"><img src="../assets/portfolio/alaqat/1.jpg" alt="">
                 </swiper-slide>
                 <swiper-slide class="swiper-item"><img src="../assets/portfolio/alaqat/2.jpg" alt="">
@@ -21,7 +21,7 @@
             <p>An app designed & developed by me during my full-
                 time position at Droobi Health. It was an mHealth
                 mobile app for Diabetes Management.</p>
-            <swiper :options="swiperOption" ref="mySwiper" @someSwiperEvent="callback">
+            <swiper :options="swiperOption" ref="mySwiper" >
                 <swiper-slide class="swiper-item"><img src="../assets/portfolio/droobi/1.jpg" alt="">
                 </swiper-slide>
 
@@ -33,7 +33,7 @@
                 Project, that allowed logging into any website just
                 like Whatsapp Web, taking into account multiple
                 factors like location, time, etc.</p>
-            <swiper :options="swiperOption" ref="mySwiper" @someSwiperEvent="callback">
+            <swiper :options="swiperOption" ref="mySwiper" >
                 <swiper-slide class="swiper-item"><img src="../assets/portfolio/passwordless/1.jpg" alt="">
                 </swiper-slide>
                 <div class="swiper-pagination" slot="pagination"></div>
@@ -43,7 +43,7 @@
             <p>An app designed & developed by me that allowed a
                 bus driver to track his/her location and student to
                 monitor locations of all buses, in realtime.</p>
-            <swiper :options="swiperOption" ref="mySwiper" @someSwiperEvent="callback">
+            <swiper :options="swiperOption" ref="mySwiper" >
                 <swiper-slide class="swiper-item"><img src="../assets/portfolio/smarttransportation/1.jpg" alt="">
                 </swiper-slide>
                 <swiper-slide class="swiper-item"><img src="../assets/portfolio/smarttransportation/2.jpg" alt="">
@@ -57,7 +57,7 @@
                 Android wear compatible smartwatches. Also, the
                 promos here were photographed, edited and/or
                 designed by me.</p>
-            <swiper :options="swiperOption" ref="mySwiper" @someSwiperEvent="callback">
+            <swiper :options="swiperOption" ref="mySwiper" >
                 <swiper-slide class="swiper-item"><img src="../assets/portfolio/discs/1.jpg" alt="">
                 </swiper-slide>
                 <swiper-slide class="swiper-item"><img src="../assets/portfolio/discs/2.jpg" alt="">
@@ -283,7 +283,7 @@
     $color-dark: #1c4e6c;
 
     .about {
-        margin: 125px 0 0 0;
+        margin: 110px 0 0 0;
     }
 
     img {
@@ -310,7 +310,11 @@
         margin-block-end: 0em;
         margin-inline-start: 0px;
         margin-inline-end: 0px;
-        padding: 18px;
+        padding: 16px;
+    }
+
+    h2 {
+        font-size: 1.3em;
     }
 
     hr {
@@ -337,13 +341,13 @@
         border-top: none;
         border-bottom: none;
         overflow: hidden;
-        transition: max-height 0.25s ease-in-out;
+        transition: max-height .56s cubic-bezier(0.52, 0.16, 0.24, 1);
         margin: 0px 10px 10px 10px;
-        border-right: 3px solid $color-dark;
-        border-left: 3px solid $color-dark;
+        border-right: 2px solid $color-dark;
+        border-left: 2px solid $color-dark;
 
         &.expanded {
-            border-bottom: 3px solid $color-dark;
+            border-bottom: 2px solid $color-dark;
         }
     }
 
@@ -351,7 +355,7 @@
         margin: 0 8px 0 0;
         float: right;
         border-style: solid;
-        border-width: 3px 3px 0 0;
+        border-width: 2px 2px 0 0;
         content: '';
         display: inline-block;
         height: 0.45em;

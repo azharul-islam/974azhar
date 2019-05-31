@@ -1,12 +1,17 @@
 <template>
     <div id="app">
-        <div id="nav" v-scroll="handleScroll">
+        <div id="nav" v-scroll="handleScroll" :class="{minimized: isMinimized, 'nav-menu-active': isMobileMenuActive}">
             <div id="brand">
                 <span class="moonstone-blue">974</span>AZHAR
             </div>
             <router-link to="/" replace>/Blog</router-link>
             <router-link to="/about" replace>/AboutMe</router-link>
             <router-link to="/portfolio" replace>/Portfolio</router-link>
+
+            <li class="menu-button" :class="{change: isMobileMenuActive, 'menu-visible': isMinimized}" @click.prevent="toggleMobileMenu">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+            </li>
         </div>
         <router-view/>
     </div>
@@ -14,36 +19,25 @@
 <script>
 
     export default {
-        name: 'Portfolio',
+        name: 'App',
         props: {},
         data: function () {
             return {
-                toggles: [false, false, false, false, false, false, false, false],
-                heights: ['0', '0', '0', '0', '0', '0', '0', '0'],
-                swiperOption: {
-                    pagination: {
-                        el: '.swiper-pagination',
-                        clickable: true
-                    },
-                    navigation: {
-                        nextEl: '.swiper-button-next',
-                        prevEl: '.swiper-button-prev',
-                    },
-                    slidesPerView: 'auto',
-                    centeredSlides: true,
-
-                }
+                isMinimized: false,
+                isMobileMenuActive: false,
             }
         },
         methods: {
             handleScroll: function (evt, el) {
-                if (window.scrollY > 50) {
-                    el.setAttribute(
-                        'style',
-                        'opacity: 1; transform: translate3d(0, -10px, 0)'
-                    )
+                if (window.scrollY > 130) {
+                    this.isMinimized = true;
                 }
-                return window.scrollY > 100
+                if(window.scrollY < 130) {
+                    this.isMinimized = false
+                }
+            },
+            toggleMobileMenu: function () {
+                this.isMobileMenuActive = !this.isMobileMenuActive;
             }
 
         }
@@ -68,10 +62,13 @@
     .container {
         margin: 0px 10px 10px 10px;
         background-color: white;
-        border: 3px solid $color-dark;
+        border: 2px solid $color-dark;
         user-select: none;
     }
 
+    .minimized {
+
+    }
 
     body {
         margin: 0px;
@@ -98,7 +95,7 @@
     }
 
     img {
-        border: 3px solid $color-dark;
+        border: 2px solid $color-dark;
     }
 
     @keyframes slide {
@@ -123,15 +120,18 @@
         top: 7px;
         left: 7px;
         right: 7px;
-        padding: 16px 16px 6px 16px;
-        border: 3px solid $color-dark;
+        overflow: hidden;
+        padding: 12px 12px 2px 12px;
+        border: 2px solid $color-dark;
         box-shadow: 0.22rem 0.22rem 0 $color-dark;
         background-color: white;
+        height: 70px;
+        transition: height .5s cubic-bezier(0.52, 0.16, 0.24, 1);
 
         a {
-            padding: 12px 22px 10px 0;
+            padding: 12px 18px 10px 0;
             font-family: 'disposabledroid_bbbold';
-            font-size: 22px;
+            font-size: 20px;
             color: $color-dark;
             text-decoration: none;
             display: inline-block;
@@ -158,11 +158,19 @@
             }
 
         }
+
+        &.minimized{
+            height: 36px;
+        }
+    }
+
+    #nav.nav-menu-active {
+        height: 70px;
     }
 
     #brand {
         font-family: 'disposabledroid_bbregular';
-        font-size: 40px;
+        font-size: 35px;
     }
 
     .moonstone-blue {
@@ -181,6 +189,45 @@
             color: $color-light;
         }
     }
+
+    .menu-button {
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: none;
+        cursor: pointer;
+        -webkit-tap-highlight-color: transparent;
+        padding: 12px 18px 12px 18px;
+        justify-self: start;
+        -webkit-transition: opacity 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+        transition: opacity 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+    }
+
+    .menu-button.menu-visible {
+        display: inline-block;
+    }
+
+    .menu-button:hover, .menu-button:focus, .menu-button:active {
+    }
+
+    .menu-button div {
+        width: 22px;
+        height: 2px;
+        background-color: $color-dark;
+        margin: 7px 0;
+
+        transition: transform .1596s cubic-bezier(0.52, 0.16, 0.52, 0.84) .1008s;
+        transform: none;
+    }
+
+    .change .bar1 {
+        transform: rotate(-45deg) translate(-2.5px, 4px);
+    }
+
+    .change .bar2 {
+        transform: rotate(45deg) translate(-2.5px, -4px);
+    }
+
 
     .swiper-pagination-bullet {
         width: 6px !important;

@@ -19,7 +19,7 @@
     padding: 18px;
 }
     .about {
-        margin: 135px 0 0 0;
+        margin: 110px 0 0 0;
     }
 
     p {
