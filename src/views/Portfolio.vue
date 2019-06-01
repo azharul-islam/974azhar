@@ -173,7 +173,7 @@
             <p>Tech Stack
                 HTML, CSS, Flexbox, Javascript, Vue.JS</p>
             <swiper :options="swiperOption" ref="mySwiper">
-                <swiper-slide class="swiper-item"><img src="../assets/portfolio/web_warrantyprinter/1.jpg"
+                <swiper-slide class="swiper-item"><img src="../assets/portfolio/erp/1.jpg"
                                                        alt=""
                 >
                 </swiper-slide>
