@@ -10,9 +10,9 @@
             <p>Android app developed for a media company that provides services like promotions, video productions &
                 social media influencers coverage.</p>
             <swiper :options="swiperOption" ref="mySwiper">
-                <swiper-slide class="swiper-item"><img src="../assets/portfolio/alaqat/1.jpg" alt="">
+                <swiper-slide class="swiper-item"><img src="../assets/portfolio/alaqat/1.png" alt="">
                 </swiper-slide>
-                <swiper-slide class="swiper-item"><img src="../assets/portfolio/alaqat/2.jpg" alt="">
+                <swiper-slide class="swiper-item"><img src="../assets/portfolio/alaqat/2.png" alt="">
                 </swiper-slide>
                 <div class="swiper-pagination" slot="pagination"></div>
             </swiper>
@@ -21,7 +21,7 @@
             <p>An app designed & developed by me during my full-time position at Droobi Health. It was an mHealth
                 mobile app for Diabetes Management.</p>
             <swiper :options="swiperOption" ref="mySwiper">
-                <swiper-slide class="swiper-item"><img src="../assets/portfolio/droobi/1.jpg" alt="">
+                <swiper-slide class="swiper-item"><img src="../assets/portfolio/droobi/1.png" alt="">
                 </swiper-slide>
 
                 <div class="swiper-pagination" slot="pagination"></div>
@@ -33,7 +33,7 @@
                 like Whatsapp Web, taking into account multiple
                 factors like location, time, etc.</p>
             <swiper :options="swiperOption" ref="mySwiper">
-                <swiper-slide class="swiper-item"><img src="../assets/portfolio/passwordless/1.jpg" alt="">
+                <swiper-slide class="swiper-item"><img src="../assets/portfolio/passwordless/1.png" alt="">
                 </swiper-slide>
                 <div class="swiper-pagination" slot="pagination"></div>
             </swiper>
@@ -80,9 +80,6 @@
             <p><b>Technology:</b> Vue.JS, CSS Grid, Flexbox, Netlify hosting and CDN with Continuous Integration,
                 Firestore</p>
             <swiper :options="swiperOption" ref="mySwiper">
-                <swiper-slide class="swiper-item"><img src="../assets/portfolio/titanium/1.gif" alt=""
-                                                       style=" background-color: white; max-height: 420px;">
-                </swiper-slide>
                 <swiper-slide class="swiper-item"><img src="../assets/portfolio/titanium/2.jpg" alt=""
                                                        style=" background-color: white; max-height:  420px;">
                 </swiper-slide>
@@ -100,9 +97,6 @@
             <h3>#2 qqqsite.com</h3>
             <p>Website designed and developed for a comedian/social media influencer. </p>
             <swiper :options="swiperOption" ref="mySwiper">
-                <swiper-slide class="swiper-item"><img src="../assets/portfolio/qqq/qqq.gif" alt=""
-                                                      >
-                </swiper-slide>
                 <swiper-slide class="swiper-item"><img src="../assets/portfolio/qqq/1.jpg" alt=""
                                                     >
                 </swiper-slide>
