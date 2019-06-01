@@ -2,7 +2,7 @@
     <div class="about">
         <span class="container header">About Me</span>
         <div class="container talk-bubble tri-right left-top">
-            <p>Hi! 👋🏻 I'm a software developer based in Qatar. I enjoy working with frontend and am currently
+            <p>Hi! 👋🏻 I'm a full-stack software developer based in Qatar. I am currently
                 specialised in Mobile and Web apps.
                 <br><br>
                 If you want to get in touch, write me an email on azhar.i@outlook.com.</p>
