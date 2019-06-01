@@ -375,7 +375,7 @@
     $color-dark: #1c4e6c;
 
     .about {
-        margin: 110px 0 0 0;
+        margin: 120px 0 0 0;
     }
 
     img {
@@ -387,18 +387,20 @@
     }
 
     p {
-        font-family: 'Roboto Slab', serif;
+        /*font-family: 'Roboto Slab', serif;*/
         /*font-family: 'disposabledroid_bbregular', serif;*/
         /*font-size: 17px;*/
         /*line-height: 1.4;*/
 
+        font-family: 'Noto Sans HK', sans-serif;
+        font-weight: 500;
         font-size: 14px;
-        line-height: 1.6;
+        line-height: 1.8;
         margin-block-start: 0em;
         margin-block-end: 0em;
         margin-inline-start: 0px;
         margin-inline-end: 0px;
-        padding: 2px 12px 14px;
+        padding: 0px 16px 14px;
     }
 
 
@@ -407,15 +409,15 @@
         margin-block-end: 0em;
         margin-inline-start: 0px;
         margin-inline-end: 0px;
-        padding: 12px;
+        padding: 16px;
     }
 
     h2 {
-        font-size: 1.3em;
+        font-size: 1.35em;
     }
 
     h3 {
-        font-size: 1.25em;
+        font-size: 1.3em;
 
     }
 
@@ -433,7 +435,7 @@
         -webkit-tap-highlight-color: transparent;
         transition: all 0.15s;
         position: relative;
-        margin: 0px 10px 0px 10px;
+        margin: 0px 16px 0px 16px;
     }
 
     .collapsible {
@@ -444,7 +446,7 @@
         border-bottom: none;
         overflow: hidden;
         transition: max-height .56s cubic-bezier(0.52, 0.16, 0.24, 1);
-        margin: 0px 10px 10px 10px;
+        margin: 0px 16px 12px 16px;
         border-right: 2px solid $color-dark;
         border-left: 2px solid $color-dark;
 

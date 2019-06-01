@@ -8,10 +8,10 @@
             <router-link to="/about" replace>/AboutMe</router-link>
             <router-link to="/portfolio" replace>/Portfolio</router-link>
 
-            <li class="menu-button" :class="{change: isMobileMenuActive, 'menu-visible': isMinimized}" @click.prevent="toggleMobileMenu">
+            <div class="menu-button" :class="{change: isMobileMenuActive, 'menu-visible': isMinimized}" @click.prevent="toggleMobileMenu">
                 <div class="bar1"></div>
                 <div class="bar2"></div>
-            </li>
+            </div>
         </div>
         <router-view/>
     </div>
@@ -116,11 +116,11 @@
     #nav {
         position: fixed;
         z-index: 1000;
-        top: 7px;
-        left: 7px;
-        right: 7px;
+        top: 10px;
+        left: 10px;
+        right: 10px;
         overflow: hidden;
-        padding: 12px 12px 2px 12px;
+        padding: 14px 14px 4px 14px;
         border: 2px solid $color-dark;
         box-shadow: 0.22rem 0.22rem 0 $color-dark;
         background-color: white;
@@ -159,7 +159,7 @@
         }
 
         &.minimized{
-            height: 36px;
+            height: 38px;
         }
     }
 
@@ -169,7 +169,7 @@
 
     #brand {
         font-family: 'disposabledroid_bbregular';
-        font-size: 35px;
+        font-size: 36px;
     }
 
     .moonstone-blue {
@@ -193,30 +193,29 @@
         position: absolute;
         top: 0;
         right: 0;
-        display: none;
+        opacity: 0;
+        pointer-events: none;
         cursor: pointer;
         -webkit-tap-highlight-color: transparent;
-        padding: 12px 18px 12px 18px;
+        padding: 15px 18px 20px 18px;
         justify-self: start;
-        -webkit-transition: opacity 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
         transition: opacity 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+
+        div {
+            width: 22px;
+            height: 2px;
+            background-color: $color-dark;
+            margin: 7px 0;
+            transition: transform .1596s cubic-bezier(0.52, 0.16, 0.52, 0.84) .1008s;
+            transform: none;
+        }
     }
 
     .menu-button.menu-visible {
-        display: inline-block;
-    }
+        opacity: 1;
+        pointer-events: auto;
+        transform: scaleY(1);
 
-    .menu-button:hover, .menu-button:focus, .menu-button:active {
-    }
-
-    .menu-button div {
-        width: 22px;
-        height: 2px;
-        background-color: $color-dark;
-        margin: 7px 0;
-
-        transition: transform .1596s cubic-bezier(0.52, 0.16, 0.52, 0.84) .1008s;
-        transform: none;
     }
 
     .change .bar1 {
