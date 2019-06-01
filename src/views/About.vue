@@ -2,10 +2,10 @@
     <div class="about">
         <span class="container header">About Me</span>
         <div class="container talk-bubble tri-right left-top">
-            <p>Hi! 👋🏻 I'm a full-stack software developer based in Qatar. I am currently
+            <p>Hi! 👋🏻 I'm a full-stack Software Developer based in Qatar. I am currently
                 specialised in Mobile and Web apps.
                 <br><br>
-                If you want to get in touch, write me an email on azhar.i@outlook.com.</p>
+                If you want to get in touch, write me an email on azhar.i@outlook.com or send me a text on +974 3333 8469.</p>
 
             <img src="../assets/azhar.jpg" height="100"/>
         </div>
