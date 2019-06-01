@@ -81,16 +81,16 @@
                 Firestore</p>
             <swiper :options="swiperOption" ref="mySwiper">
                 <swiper-slide class="swiper-item"><img src="../assets/portfolio/titanium/1.gif" alt=""
-                                                       style="padding: 10px 36px; background-color: white">
+                                                       style=" background-color: white; max-height: 420px;">
                 </swiper-slide>
                 <swiper-slide class="swiper-item"><img src="../assets/portfolio/titanium/2.jpg" alt=""
-                                                       style="padding: 10px 36px; background-color: white">
+                                                       style=" background-color: white; max-height:  420px;">
                 </swiper-slide>
                 <swiper-slide class="swiper-item"><img src="../assets/portfolio/titanium/3.jpg" alt=""
-                                                       style="padding: 10px 36px; background-color: white">
+                                                       style="background-color: white; max-height: 420px;">
                 </swiper-slide>
                 <swiper-slide class="swiper-item"><img src="../assets/portfolio/titanium/4.jpg" alt=""
-                                                       style="padding: 10px 36px; background-color: white">
+                                                       style=" background-color: white; max-height:  420px;">
                 </swiper-slide>
 
                 <div class="swiper-pagination" slot="pagination"></div>
@@ -101,22 +101,22 @@
             <p>Website designed and developed for a comedian/social media influencer. </p>
             <swiper :options="swiperOption" ref="mySwiper">
                 <swiper-slide class="swiper-item"><img src="../assets/portfolio/qqq/qqq.gif" alt=""
-                                                       style="padding: 10px 36px; background-color: white">
+                                                      >
                 </swiper-slide>
                 <swiper-slide class="swiper-item"><img src="../assets/portfolio/qqq/1.jpg" alt=""
-                                                       style="padding: 10px 36px; background-color: white">
+                                                    >
                 </swiper-slide>
                 <swiper-slide class="swiper-item"><img src="../assets/portfolio/qqq/2.jpg" alt=""
-                                                       style="padding: 10px 36px; background-color: white">
+                                                   >
                 </swiper-slide>
                 <swiper-slide class="swiper-item"><img src="../assets/portfolio/qqq/3.jpg" alt=""
-                                                       style="padding: 10px 36px; background-color: white">
+                                                  >
                 </swiper-slide>
                 <swiper-slide class="swiper-item"><img src="../assets/portfolio/qqq/4.jpg" alt=""
-                                                       style="padding: 10px 36px; background-color: white">
+                                                     >
                 </swiper-slide>
                 <swiper-slide class="swiper-item"><img src="../assets/portfolio/qqq/5.jpg" alt=""
-                                                       style="padding: 10px 36px; background-color: white">
+                                                      >
                 </swiper-slide>
 
                 <div class="swiper-pagination" slot="pagination"></div>
@@ -177,7 +177,11 @@
                                                        alt=""
                 >
                 </swiper-slide>
-                <swiper-slide class="swiper-item"><img src="../assets/portfolio/web_warrantyprinter/2.jpg"
+                <swiper-slide class="swiper-item"><img src="../assets/portfolio/erp/2.jpg"
+                                                       alt=""
+                >
+                </swiper-slide>
+                <swiper-slide class="swiper-item"><img src="../assets/portfolio/erp/3.jpg"
                                                        alt=""
                 >
                 </swiper-slide>
@@ -293,6 +297,8 @@
                     },
                     slidesPerView: 'auto',
                     centeredSlides: true,
+                    spaceBetween: 10,
+
 
                 }
             }
@@ -379,9 +385,11 @@
     }
 
     img {
+        text-align: center;
         max-width: 90%;
         margin-bottom: 35px;
-        margin-left: 5%;
+        margin-left: auto;
+        margin-right: auto;
         max-height: 480px;
         border: 1px solid $color-dark;
     }
@@ -482,4 +490,9 @@
         top: 0.25em;
     }
 
+    .swiper-item {
+        object-fit: cover;
+        max-width: 300px;
+
+    }
 </style>
