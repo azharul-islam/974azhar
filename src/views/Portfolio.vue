@@ -98,19 +98,19 @@
             <p>Website designed and developed for a comedian/social media influencer. </p>
             <swiper :options="swiperOption" ref="mySwiper">
                 <swiper-slide class="swiper-item"><img src="../assets/portfolio/qqq/1.jpg" alt=""
-                                                    >
+                >
                 </swiper-slide>
                 <swiper-slide class="swiper-item"><img src="../assets/portfolio/qqq/2.jpg" alt=""
-                                                   >
+                >
                 </swiper-slide>
                 <swiper-slide class="swiper-item"><img src="../assets/portfolio/qqq/3.jpg" alt=""
-                                                  >
+                >
                 </swiper-slide>
                 <swiper-slide class="swiper-item"><img src="../assets/portfolio/qqq/4.jpg" alt=""
-                                                     >
+                >
                 </swiper-slide>
                 <swiper-slide class="swiper-item"><img src="../assets/portfolio/qqq/5.jpg" alt=""
-                                                      >
+                >
                 </swiper-slide>
 
                 <div class="swiper-pagination" slot="pagination"></div>
@@ -200,30 +200,29 @@
                 :class="{toggled: toggles[3]}"></span>
         </h2>
         <div ref="d" class="collapsible" :class="{expanded: toggles[3]}" :style="{maxHeight: heights[3]}">
-            <h3>Alaqat</h3>
+
+            <h3>Logo Design</h3>
+            <swiper :options="swiperOption" ref="mySwiper">
+                <swiper-slide class="swiper-item"><img src="../assets/portfolio/logodesign/1.png" alt=""></swiper-slide>
+                <div class="swiper-pagination" slot="pagination"></div>
+
+            </swiper>
+
             <hr>
-            <h3>Droobi</h3>
-            <hr>
-            <h3>Passwordless</h3>
-            <hr>
-            <h3>Smart Transportation</h3>
-            <hr>
-            <h3>Discs Watchface</h3>
         </div>
         <h2 class="container collapser" @click="toggleCollapsible(4)" :class="{expanded: toggles[4]}">3D Modelling <span
                 class="chevron bottom"
                 :class="{toggled: toggles[4]}"></span>
         </h2>
         <div ref="e" class="collapsible" :class="{expanded: toggles[4]}" :style="{maxHeight: heights[4]}">
-            <h3>Alaqat</h3>
-            <hr>
-            <h3>Droobi</h3>
-            <hr>
-            <h3>Passwordless</h3>
-            <hr>
-            <h3>Smart Transportation</h3>
-            <hr>
-            <h3>Discs Watchface</h3>
+            <h3>3D Modelling</h3>
+
+            <swiper :options="swiperOption" ref="mySwiper">
+                <swiper-slide class="swiper-item"><img src="../assets/portfolio/3d/1.jpg" alt=""></swiper-slide>
+                <div class="swiper-pagination" slot="pagination"></div>
+
+            </swiper>
+
         </div>
         <h2 class="container collapser" @click="toggleCollapsible(5)" :class="{expanded: toggles[5]}">Brochure Design
             <span
@@ -231,30 +230,34 @@
                     :class="{toggled: toggles[5]}"></span>
         </h2>
         <div ref="f" class="collapsible" :class="{expanded: toggles[5]}" :style="{maxHeight: heights[5]}">
-            <h3>Alaqat</h3>
-            <hr>
-            <h3>Droobi</h3>
-            <hr>
-            <h3>Passwordless</h3>
-            <hr>
-            <h3>Smart Transportation</h3>
-            <hr>
-            <h3>Discs Watchface</h3>
+            <h3>Tri-Folding Brochure</h3>
+            <p>A tri-folding brochure designed for Droobi Diabetes management app in Adobe Indesign</p>
+
+            <swiper :options="swiperOption" ref="mySwiper">
+                <swiper-slide class="swiper-item"><img src="../assets/portfolio/brochure/1.jpg" alt=""></swiper-slide>
+                <swiper-slide class="swiper-item"><img src="../assets/portfolio/brochure/2.jpg" alt=""></swiper-slide>
+                <div class="swiper-pagination" slot="pagination"></div>
+
+            </swiper>
+
         </div>
         <h2 class="container collapser" @click="toggleCollapsible(6)" :class="{expanded: toggles[6]}">Game Design <span
                 class="chevron bottom"
                 :class="{toggled: toggles[6]}"></span>
         </h2>
         <div ref="g" class="collapsible" :class="{expanded: toggles[6]}" :style="{maxHeight: heights[6]}">
-            <h3>Alaqat</h3>
-            <hr>
-            <h3>Droobi</h3>
-            <hr>
-            <h3>Passwordless</h3>
-            <hr>
-            <h3>Smart Transportation</h3>
-            <hr>
-            <h3>Discs Watchface</h3>
+            <h3>Game Level Design</h3>
+            <p>Designed and developed this game level using Unity 3D & Blender.
+
+                Challenges included,
+                -Navigating the boat among the rocks. Turning too much however would cause the boat to topple
+                -Reaching destination on time.</p>
+            <swiper :options="swiperOption" ref="mySwiper">
+                <swiper-slide class="swiper-item"><img src="../assets/portfolio/game/1.jpg" alt=""></swiper-slide>
+                <div class="swiper-pagination" slot="pagination"></div>
+
+            </swiper>
+
         </div>
         <h2 class="container collapser" @click="toggleCollapsible(7)" :class="{expanded: toggles[7]}">Miscellaneous
             <span
@@ -263,10 +266,39 @@
         </h2>
         <div ref="h" class="collapsible" :class="{expanded: toggles[7]}" :style="{maxHeight: heights[7]}">
             <h3>Print Formats Design and Development</h3>
+            <p>I had to take the old quotation layout and modernize it. I tried to present important information clearly
+                and at the same time minimize or hide distracting information. I aimed to create a minimal design that
+                matched the branding of the company. It was important for a quotation to look it’s best as it was the
+                very first point of contact with a lead.
+
+                I also made the design bolder as I believed it would project confidence and lend credibility to the
+                company.
+                <br>
+                <strong>Technology leveraged:</strong> HTML, CSS, Jinja Templating
+            </p>
+            <swiper :options="swiperOption" ref="mySwiper">
+                <swiper-slide class="swiper-item"><img src="../assets/portfolio/printformat/1.png" alt="">
+                </swiper-slide>
+                <div class="swiper-pagination" slot="pagination"></div>
+
+            </swiper>
             <hr>
             <h3>Business Cards Design</h3>
+            <p>Designed by me using Adobe Illustrator for Droobi Health W.L.L.</p>
+            <swiper :options="swiperOption" ref="mySwiper">
+                <swiper-slide class="swiper-item"><img src="../assets/portfolio/businesscard/1.jpg" alt="">
+                </swiper-slide>
+                <div class="swiper-pagination" slot="pagination"></div>
+
+            </swiper>
             <hr>
             <h3>Map Art</h3>
+            <p>I created this map art using snazzymaps.com and Adobe Photoshop, for my city. Then, I printed and framed them in Ikea frames and sold them.</p>
+            <swiper :options="swiperOption" ref="mySwiper">
+                <swiper-slide class="swiper-item"><img src="../assets/portfolio/mapart/1.jpg" alt="">
+                </swiper-slide>
+                <div class="swiper-pagination" slot="pagination"></div>
+            </swiper>
         </div>
     </div>
 </template>
@@ -487,8 +519,6 @@
         transform: rotate(-45deg);
         top: 0.25em;
     }
-
-
 
 
     .swiper-item {
