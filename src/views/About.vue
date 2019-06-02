@@ -1,8 +1,8 @@
 <template>
     <div class="about">
-        <span class="container header">About Me</span>
         <div class="container talk-bubble tri-right left-top">
-            <p>Hi! 👋🏻 I'm a full-stack Software Developer based in Qatar. I am currently
+<!--            <span class="container header">About Me</span>-->
+            <p>Hi! 👋🏻 My name is Azharul Islam. I'm a full-stack Software Developer based in Qatar,
                 specialised in Mobile and Web apps.
                 <br><br>
                 If you want to get in touch, write me an email on azhar.i@outlook.com or send me a text on +974 3333 8469.</p>
@@ -16,23 +16,26 @@
     $color-dark: #1c4e6c;
 
     .container {
-        padding: 18px;
+        padding: 14px;
         margin: 10px 28px;
 
 
     }
 
     .talk-bubble {
-        margin:  0 40px 40px 40px;
+        margin:  0 90px 40px 35px;
         display: inline-block;
         position: relative;
-        width: 200px;
+        /*width: 250px;*/
         height: auto;
     }
 
     .about {
-        margin: 200px 0 0 0;
+        margin: 130px 0 0 0;
         position: relative;
+        display: grid;
+        grid-template-columns: minmax(200px, 500px);
+        justify-content: center;
     }
 
     p {

@@ -28,7 +28,7 @@
             }
         },
         methods: {
-            handleScroll: function (evt, el) {
+            handleScroll: function () {
                 if (window.scrollY > 130) {
                     this.isMinimized = true;
                 }
@@ -90,7 +90,7 @@
                         $color-bg 75%,
                         $color-bg
         );
-        background-size: 60px 60px;
+        background-size: 80px 80px;
         background-position: 0 0;
         animation: slide 4s infinite linear;
     }

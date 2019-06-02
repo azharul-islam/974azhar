@@ -375,7 +375,11 @@
     $color-dark: #1c4e6c;
 
     .about {
-        margin: 120px 0 0 0;
+        margin: 130px 0 0 0;
+
+        display: grid;
+        grid-template-columns: minmax(100px, 900px);
+        justify-content: center;
     }
 
     img {
@@ -484,9 +488,12 @@
         top: 0.25em;
     }
 
+
+
+
     .swiper-item {
         object-fit: cover;
-        max-width: 300px;
+        max-width: 400px;
 
     }
 </style>
