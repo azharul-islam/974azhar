@@ -18,8 +18,6 @@
     .container {
         padding: 14px;
         margin: 10px 28px;
-
-
     }
 
     .talk-bubble {
@@ -31,7 +29,7 @@
     }
 
     .about {
-        margin: 130px 0 0 0;
+        margin: 10px 0 0 0;
         position: relative;
         display: grid;
         grid-template-columns: minmax(200px, 500px);

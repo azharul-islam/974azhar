@@ -1,17 +1,19 @@
 <template>
     <div id="app">
-        <div id="nav" v-scroll="handleScroll" :class="{minimized: isMinimized, 'nav-menu-active': isMobileMenuActive}">
-            <div id="brand">
-                <span class="moonstone-blue">974</span>AZHAR
-            </div>
-            <router-link to="/" replace>/Blog</router-link>
-            <router-link to="/about" replace>/AboutMe</router-link>
-            <router-link to="/portfolio" replace>/Portfolio</router-link>
-
-            <div class="menu-button" :class="{change: isMobileMenuActive, 'menu-visible': isMinimized}" @click.prevent="toggleMobileMenu">
-                <div class="bar1"></div>
-                <div class="bar2"></div>
-            </div>
+        <div class="nav-container">
+        <div id="brand">
+            <span class="moonstone-blue">974</span>AZHAR
+        </div>
+        <nav :class="{minimized: isMinimized, 'nav-menu-active': isMobileMenuActive}">
+            <router-link to="/" replace>Blog</router-link>
+            <router-link to="/about" replace style="margin-bottom: 27px;">About Me</router-link>
+            <router-link to="/portfolio" replace>Portfolio</router-link>
+<!--            <div class="menu-button" :class="{change: isMobileMenuActive, 'menu-visible': isMinimized}"-->
+<!--                 @click.prevent="toggleMobileMenu">-->
+<!--                <div class="bar1"></div>-->
+<!--                <div class="bar2"></div>-->
+<!--            </div>-->
+        </nav>
         </div>
         <router-view/>
     </div>
@@ -32,7 +34,7 @@
                 if (window.scrollY > 130) {
                     this.isMinimized = true;
                 }
-                if(window.scrollY < 130) {
+                if (window.scrollY < 130) {
                     this.isMinimized = false
                 }
             },
@@ -49,8 +51,8 @@
 
     $color-bg: rgba(28, 78, 108, 0.07);
     $color-dark: #1c4e6c;
-    $color-light: #36B1BF;
-    $color-accent: #CA3041;
+    $color-light: #3bc2d1;
+    $color-accent: #f23c50;
 
     #app {
         font-family: Helvetica, Arial, sans-serif;
@@ -74,25 +76,6 @@
     body {
         margin: 0px;
         background-color: #F4F4F4;
-        background-image: linear-gradient(
-                        45deg,
-                        $color-bg 25%,
-                        transparent 25%,
-                        transparent 75%,
-                        $color-bg 75%,
-                        $color-bg
-        ),
-        linear-gradient(
-                        -45deg,
-                        $color-bg 25%,
-                        transparent 25%,
-                        transparent 75%,
-                        $color-bg 75%,
-                        $color-bg
-        );
-        background-size: 80px 80px;
-        background-position: 0 0;
-        animation: slide 4s infinite linear;
     }
 
     img {
@@ -113,38 +96,37 @@
         font-family: 'disposabledroid_bbbold';
     }
 
-    #nav {
-        position: fixed;
-        z-index: 1000;
-        top: 10px;
-        left: 10px;
-        right: 10px;
-        overflow: hidden;
-        padding: 14px 14px 4px 14px;
-        border: 2px solid $color-dark;
-        box-shadow: 0.22rem 0.22rem 0 $color-dark;
-        background-color: white;
-        height: 70px;
+    .nav-container {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-around;
+        padding: 36px 31px 30px 0px;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
         transition: height .5s cubic-bezier(0.52, 0.16, 0.24, 1);
 
         a {
-            padding: 12px 18px 10px 0;
-            font-family: 'disposabledroid_bbbold';
+            margin: 8px 0px;
+            font-family: 'inria_sansbold';
+            font-weight: bold;
             font-size: 20px;
             color: $color-dark;
             text-decoration: none;
             display: inline-block;
+            transition: all .3s;
 
-            &:last-child {
-                padding-right: 10px;
-            }
 
             &:visited {
                 color: $color-dark;
             }
 
             &:hover {
-                color: $color-light;
+                color: $color-accent;
+                box-shadow: 0 4px 0 0 $color-accent;
             }
 
             &:active {
@@ -152,13 +134,14 @@
             }
 
             &.router-link-exact-active {
-                color: #CA3041;
+                color: $color-accent;
+                box-shadow: 0 4px 0 0 $color-accent;
                 pointer-events: none;
             }
 
         }
 
-        &.minimized{
+        &.minimized {
             height: 38px;
         }
     }
@@ -168,8 +151,15 @@
     }
 
     #brand {
-        font-family: 'disposabledroid_bbregular';
-        font-size: 36px;
+        align-self: center;
+        font-family: 'disposabledroid_bbbold';
+        font-size: 40px;
+        background-color: #3a77d3;
+        color: #ffffff;
+        padding: 10px;
+        box-shadow: 0.22rem 0.22rem 0 $color-dark;
+
+        transform: skew(0deg, -5deg) scaleX(0.9);
     }
 
     .moonstone-blue {
@@ -271,5 +261,44 @@
         font-weight: normal;
         font-style: normal;
     }
+
+    /*Inria Sans*/
+
+    @font-face {
+        font-family: 'inria_sansbold';
+        src: url('./assets/fonts/inria_sans/inriasans-bold-webfont.woff2') format('woff2'),
+        url('./assets/fonts/inria_sans/inriasans-bold-webfont.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+
+    }
+
+    @font-face {
+        font-family: 'inria_sansbold_italic';
+        src: url('./assets/fonts/inria_sans/inriasans-bolditalic-webfont.woff2') format('woff2'),
+        url('./assets/fonts/inria_sans/inriasans-bolditalic-webfont.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+
+    }
+
+    @font-face {
+        font-family: 'inria_sansitalic';
+        src: url('./assets/fonts/inria_sans/inriasans-italic-webfont.woff2') format('woff2'),
+        url('./assets/fonts/inria_sans/inriasans-italic-webfont.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+
+    }
+
+    @font-face {
+        font-family: 'inria_sansregular';
+        src: url('./assets/fonts/inria_sans/inriasans-regular-webfont.woff2') format('woff2'),
+        url('./assets/fonts/inria_sans/inriasans-regular-webfont.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+
+    }
+
 
 </style>

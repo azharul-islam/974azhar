@@ -407,7 +407,7 @@
     $color-dark: #1c4e6c;
 
     .about {
-        margin: 130px 0 0 0;
+        margin: 10px 0 0 0;
 
         display: grid;
         grid-template-columns: minmax(100px, 900px);
