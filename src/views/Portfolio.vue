@@ -1,12 +1,12 @@
 <template>
     <div class="about">
 
-        <h2 class="container collapser" @click="toggleCollapsible(0)" :class="{expanded: toggles[0]}">Mobile Apps <span
+        <h2 class="accordion-header container collapser" @click="toggleCollapsible(0)" :class="{expanded: toggles[0]}">Mobile Apps <span
                 class="chevron bottom"
                 :class="{toggled: toggles[0]}"></span>
         </h2>
         <div ref="a" class="collapsible" :class="{expanded: toggles[0]}" :style="{maxHeight: heights[0]}">
-            <h3>#1 Alaqat</h3>
+            <h3>Alaqat</h3>
             <p>Android app developed for a media company that provides services like promotions, video productions &
                 social media influencers coverage.</p>
             <swiper :options="swiperOption" ref="mySwiper">
@@ -17,7 +17,7 @@
                 <div class="swiper-pagination" slot="pagination"></div>
             </swiper>
             <hr>
-            <h3>#2 Droobi</h3>
+            <h3>Droobi</h3>
             <p>An app designed & developed by me during my full-time position at Droobi Health. It was an mHealth
                 mobile app for Diabetes Management.</p>
             <swiper :options="swiperOption" ref="mySwiper">
@@ -27,7 +27,7 @@
                 <div class="swiper-pagination" slot="pagination"></div>
             </swiper>
             <hr>
-            <h3>#3 Passwordless</h3>
+            <h3>Passwordless</h3>
             <p>An app designed & developed by me for Senior Design
                 Project, that allowed logging into any website just
                 like Whatsapp Web, taking into account multiple
@@ -38,7 +38,7 @@
                 <div class="swiper-pagination" slot="pagination"></div>
             </swiper>
             <hr>
-            <h3>#4 Smart Transportation</h3>
+            <h3>Smart Transportation</h3>
             <p>An app designed & developed by me that allowed a
                 bus driver to track his/her location and student to
                 monitor locations of all buses, in realtime.</p>
@@ -50,7 +50,7 @@
                 <div class="swiper-pagination" slot="pagination"></div>
             </swiper>
             <hr>
-            <h3>#5 Discs Watchface</h3>
+            <h3>Discs Watchface</h3>
             <p>Watchface designed and developed by me as a side
                 project. It was then deployed to Play Store for
                 Android wear compatible smartwatches. Also, the
@@ -69,13 +69,13 @@
             </swiper>
         </div>
 
-        <h2 class="container collapser" @click="toggleCollapsible(1)" :class="{expanded: toggles[1]}">Web Apps/Sites
+        <h2 class="accordion-header container collapser" @click="toggleCollapsible(1)" :class="{expanded: toggles[1]}">Web Apps/Sites
             <span
                     class="chevron bottom"
                     :class="{toggled: toggles[1]}"></span>
         </h2>
         <div ref="b" class="collapsible" :class="{expanded: toggles[1]}" :style="{maxHeight: heights[1]}">
-            <h3>#1 titanium.com.bd</h3>
+            <h3>titanium.com.bd</h3>
             <p>Landing page for an LED lighting manufacturer in Bangladesh. Designed and developed by me.</p>
             <p><b>Technology:</b> Vue.JS, CSS Grid, Flexbox, Netlify hosting and CDN with Continuous Integration,
                 Firestore</p>
@@ -94,7 +94,7 @@
             </swiper>
 
             <hr>
-            <h3>#2 qqqsite.com</h3>
+            <h3>qqqsite.com</h3>
             <p>Website designed and developed for a comedian/social media influencer. </p>
             <swiper :options="swiperOption" ref="mySwiper">
                 <swiper-slide class="swiper-item"><img src="../assets/portfolio/qqq/1.jpg" alt=""
@@ -116,7 +116,7 @@
                 <div class="swiper-pagination" slot="pagination"></div>
             </swiper>
             <hr>
-            <h3>#3 droobihealth.com</h3>
+            <h3>droobihealth.com</h3>
             <p>Landing page for Droobi Health.</p>
             <swiper :options="swiperOption" ref="mySwiper">
                 <swiper-slide class="swiper-item"><img src="../assets/portfolio/droobiweb/1.jpg" alt=""
@@ -128,7 +128,7 @@
                 <div class="swiper-pagination" slot="pagination"></div>
             </swiper>
             <hr>
-            <h3>#4 Intervention Messages Algorithm Simulator</h3>
+            <h3>Intervention Messages Algorithm Simulator</h3>
             <p>At Droobi Health W.L.L., while we were working on an algorithm for sending out notification, intervention
                 and reminder messages, I had developed a simulator to help better understand the flow and allow easier
                 explanation to stakeholders during presentations.</p>
@@ -144,7 +144,7 @@
                 <div class="swiper-pagination" slot="pagination"></div>
             </swiper>
             <hr>
-            <h3>#5 Card Printer</h3>
+            <h3>Card Printer</h3>
             <p>A reactive web app developed for printing serial numbers on pre-printed warranty cards. </p>
 
             <p>Tech Stack
@@ -161,7 +161,7 @@
                 <div class="swiper-pagination" slot="pagination"></div>
             </swiper>
             <hr>
-            <h3>#6 ERP</h3>
+            <h3>ERP</h3>
             <p>A web-based ERP customized and implemented.</p>
 
             <p>Tech Stack
@@ -184,7 +184,7 @@
         </div>
 
 
-        <h2 class="container collapser" @click="toggleCollapsible(2)" :class="{expanded: toggles[2]}">Photography <span
+        <h2 class="accordion-header container collapser" @click="toggleCollapsible(2)" :class="{expanded: toggles[2]}">Photography <span
                 class="chevron bottom"
                 :class="{toggled: toggles[2]}"></span>
         </h2>
@@ -195,7 +195,7 @@
             <hr>
             <h3>Food</h3>
         </div>
-        <h2 class="container collapser" @click="toggleCollapsible(3)" :class="{expanded: toggles[3]}">Logo Design <span
+        <h2 class="accordion-header container collapser" @click="toggleCollapsible(3)" :class="{expanded: toggles[3]}">Logo Design <span
                 class="chevron bottom"
                 :class="{toggled: toggles[3]}"></span>
         </h2>
@@ -208,9 +208,8 @@
 
             </swiper>
 
-            <hr>
         </div>
-        <h2 class="container collapser" @click="toggleCollapsible(4)" :class="{expanded: toggles[4]}">3D Modelling <span
+        <h2 class="accordion-header container collapser" @click="toggleCollapsible(4)" :class="{expanded: toggles[4]}">3D Modelling <span
                 class="chevron bottom"
                 :class="{toggled: toggles[4]}"></span>
         </h2>
@@ -224,7 +223,7 @@
             </swiper>
 
         </div>
-        <h2 class="container collapser" @click="toggleCollapsible(5)" :class="{expanded: toggles[5]}">Brochure Design
+        <h2 class="accordion-header container collapser" @click="toggleCollapsible(5)" :class="{expanded: toggles[5]}">Brochure Design
             <span
                     class="chevron bottom"
                     :class="{toggled: toggles[5]}"></span>
@@ -241,7 +240,7 @@
             </swiper>
 
         </div>
-        <h2 class="container collapser" @click="toggleCollapsible(6)" :class="{expanded: toggles[6]}">Game Design <span
+        <h2 class="accordion-header container collapser" @click="toggleCollapsible(6)" :class="{expanded: toggles[6]}">Game Design <span
                 class="chevron bottom"
                 :class="{toggled: toggles[6]}"></span>
         </h2>
@@ -259,7 +258,7 @@
             </swiper>
 
         </div>
-        <h2 class="container collapser" @click="toggleCollapsible(7)" :class="{expanded: toggles[7]}">Miscellaneous
+        <h2 class="accordion-header container collapser" @click="toggleCollapsible(7)" :class="{expanded: toggles[7]}">Miscellany
             <span
                     class="chevron bottom"
                     :class="{toggled: toggles[7]}"></span>
@@ -421,7 +420,6 @@
         margin-left: auto;
         margin-right: auto;
         max-height: 480px;
-        border: 1px solid $color-dark;
     }
 
     p {
@@ -447,24 +445,19 @@
         margin-block-end: 0em;
         margin-inline-start: 0px;
         margin-inline-end: 0px;
-        padding: 16px;
+        padding: 18px 16px;
     }
 
-    h2 {
-        font-size: 1.35em;
-    }
-
-    h3 {
-        font-size: 1.3em;
-
+    .accordion-header {
+        font-size: 20px;
     }
 
     hr {
-        border-top: 1px solid $color-dark;
         margin-block-start: 0em;
         margin-block-end: 0em;
         margin-inline-start: 0px;
         margin-inline-end: 0px;
+        background-color: transparent;
     }
 
 
@@ -478,23 +471,18 @@
 
     .collapsible {
         user-select: none;
-        background-color: #F4F4F4;
+        background-color: #FFFFFF;
         max-height: 0;
-        border-top: none;
-        border-bottom: none;
         overflow: hidden;
         transition: max-height .56s cubic-bezier(0.52, 0.16, 0.24, 1);
-        margin: 0px 16px 12px 16px;
-        border-right: 2px solid $color-dark;
-        border-left: 2px solid $color-dark;
+        margin: 0px 16px 4px 16px;
 
         &.expanded {
-            border-bottom: 2px solid $color-dark;
         }
     }
 
     .chevron::before {
-        margin: 0 8px 0 0;
+        margin: 5px 8px 0 0;
         float: right;
         border-style: solid;
         border-width: 2px 2px 0 0;

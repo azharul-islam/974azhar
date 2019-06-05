@@ -2,7 +2,7 @@
     <div id="app">
         <div class="nav-container">
         <div id="brand">
-            <span class="moonstone-blue">974</span>AZHAR
+            <span class="moonstone-blue">974</span><span>A</span><span>Z</span><span>H</span><span>A</span><span>R</span>
         </div>
         <nav :class="{minimized: isMinimized, 'nav-menu-active': isMobileMenuActive}">
             <router-link to="/" replace>Blog</router-link>
@@ -64,23 +64,16 @@
     .container {
         margin: 0px 10px 10px 10px;
         background-color: white;
-        border: 2px solid $color-dark;
         user-select: none;
         /*max-width: 1000px;*/
     }
 
-    .minimized {
-
-    }
 
     body {
         margin: 0px;
         background-color: #F4F4F4;
     }
 
-    img {
-        border: 2px solid $color-dark;
-    }
 
     @keyframes slide {
         from {
@@ -93,14 +86,14 @@
     }
 
     h1, h2, h3, h4, h5, h6 {
-        font-family: 'disposabledroid_bbbold';
+        font-family: 'inria_sansbold';
     }
 
     .nav-container {
         display: flex;
         align-items: flex-start;
         justify-content: space-around;
-        padding: 36px 31px 30px 0px;
+        padding: 36px 31px 45px 0px;
     }
 
     nav {
@@ -110,6 +103,7 @@
         transition: height .5s cubic-bezier(0.52, 0.16, 0.24, 1);
 
         a {
+            user-select: none;
             margin: 8px 0px;
             font-family: 'inria_sansbold';
             font-weight: bold;
@@ -158,8 +152,9 @@
         color: #ffffff;
         padding: 10px;
         box-shadow: 0.22rem 0.22rem 0 $color-dark;
-
         transform: skew(0deg, -5deg) scaleX(0.9);
+        user-select: none;
+
     }
 
     .moonstone-blue {

@@ -76,7 +76,7 @@
         top: -2px;
         bottom: auto;
         border: 23px solid;
-        border-color: $color-dark transparent transparent transparent;
+        border-color: transparent transparent transparent transparent;
     }
 
     .tri-right.left-top:after {
