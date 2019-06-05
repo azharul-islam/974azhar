@@ -5,7 +5,7 @@
             <p>Hi! 👋🏻 My name is Azharul Islam. I'm a full-stack Software Developer based in Qatar,
                 specialised in Mobile and Web apps.
                 <br><br>
-                If you want to get in touch, shoot me an <a href="mailto:azhar.i@outlook.com?Subject=Hello" target="_top">email</a> on azhar.i@outlook.com or <a href="https://web.whatsapp.com/send?phone=97433338469" title="Text on WhatsApp">whatsapp</a> me on +974 3333 8469.</p>
+                If you want to get in touch, shoot me an <a href="mailto:azhar.i@outlook.com?Subject=Hello" target="_top">email</a> on azhar.i@outlook.com or <a href="https://wa.me/97433338469?text=Hey," title="Text on WhatsApp">whatsapp</a> me on +974 3333 8469.</p>
 
             <img src="../assets/azhar.jpg" height="100"/>
         </div>
