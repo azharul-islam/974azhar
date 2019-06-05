@@ -2,10 +2,10 @@
     <div class="about">
         <div class="container talk-bubble tri-right left-top">
 <!--            <span class="container header">About Me</span>-->
-            <p>Hi! 👋🏻 My name is Azharul Islam. I'm a full-stack Software Developer based in Qatar,
+            <p>Hi! 👋🏻 I'm Azharul Islam, a full-stack Software Developer based in Qatar,
                 specialised in Mobile and Web apps.
                 <br><br>
-                If you want to get in touch, shoot me an <a href="mailto:azhar.i@outlook.com?Subject=Hello" target="_top">email</a> on azhar.i@outlook.com or <a href="https://wa.me/97433338469?text=Hey," title="Text on WhatsApp">whatsapp</a> me on +974 3333 8469.</p>
+                You can reach out to me on <a href="mailto:azhar.i@outlook.com?Subject=Hello" target="_top">azhar.i@outlook.com</a> or <a href="https://wa.me/97433338469" title="Text on WhatsApp">whatsapp</a> me on +974 3333 8469.</p>
 
             <img src="../assets/azhar.jpg" height="100"/>
         </div>
@@ -24,7 +24,6 @@
         margin:  0 90px 40px 35px;
         display: inline-block;
         position: relative;
-        /*width: 250px;*/
         height: auto;
     }
 
@@ -37,8 +36,9 @@
     }
 
     p {
-        font-family: 'disposabledroid_bbregular', sans-serif;
+        font-family: 'inria_sansregular', sans-serif;
         font-size: 18px;
+        line-height: 1.7;
         margin-block-start: 0em;
         margin-block-end: 0.8em;
         margin-inline-start: 0px;

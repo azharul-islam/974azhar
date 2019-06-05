@@ -50,6 +50,7 @@
 <style lang="scss">
 
     $color-bg: rgba(28, 78, 108, 0.07);
+    $color-primary: #3a77d3;
     $color-dark: #1c4e6c;
     $color-light: #3bc2d1;
     $color-accent: #f23c50;
@@ -71,7 +72,7 @@
 
     body {
         margin: 0px;
-        background-color: #F4F4F4;
+        background-color: #efefef;
     }
 
 
@@ -87,6 +88,24 @@
 
     h1, h2, h3, h4, h5, h6 {
         font-family: 'inria_sansbold';
+    }
+
+    a {
+        box-shadow: 0 2px 0 0 currentColor;
+        color: $color-primary;
+        text-decoration: none;
+        transition: color .2s cubic-bezier(.47,0,.74,.71),font-size .2s cubic-bezier(.47,0,.74,.71);
+        /*-webkit-tap-highlight-color: transparent;*/
+
+        &:hover {
+            color: $color-light;
+        }
+
+        &:active {
+            color: $color-primary;
+        } &:focus {
+            color: $color-primary;
+        }
     }
 
     .nav-container {
@@ -112,7 +131,8 @@
             text-decoration: none;
             display: inline-block;
             transition: all .3s;
-
+            box-shadow: none;
+            -webkit-tap-highlight-color: transparent;
 
             &:visited {
                 color: $color-dark;
@@ -148,7 +168,7 @@
         align-self: center;
         font-family: 'disposabledroid_bbbold';
         font-size: 40px;
-        background-color: #3a77d3;
+        background-color: $color-primary;
         color: #ffffff;
         padding: 10px;
         box-shadow: 0.22rem 0.22rem 0 $color-dark;
@@ -161,18 +181,7 @@
         color: $color-light
     }
 
-    a {
-        -webkit-tap-highlight-color: transparent;
-        color: $color-dark;
 
-        &.router-link-exact-active {
-            color: #CA3041;
-        }
-
-        &:hover {
-            color: $color-light;
-        }
-    }
 
     .menu-button {
         position: absolute;
