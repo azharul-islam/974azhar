@@ -7,7 +7,7 @@
         <nav :class="{minimized: isMinimized, 'nav-menu-active': isMobileMenuActive}">
             <router-link to="/" replace>Blog</router-link>
             <router-link to="/about" replace style="margin-bottom: 27px;">About Me</router-link>
-            <router-link to="/portfolio" replace>Portfolio</router-link>
+            <router-link to="/portfolio" replace>Work</router-link>
 <!--            <div class="menu-button" :class="{change: isMobileMenuActive, 'menu-visible': isMinimized}"-->
 <!--                 @click.prevent="toggleMobileMenu">-->
 <!--                <div class="bar1"></div>-->
