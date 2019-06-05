@@ -337,56 +337,56 @@
                         if (this.toggles[value]) {
                             this.$set(this.heights, value, '0');
                         } else {
-                            this.$set(this.heights, value, this.$refs.a.scrollHeight + 'px')
+                            this.$set(this.heights, value, 'none')
                         }
                         break;
                     case 1:
                         if (this.toggles[value]) {
                             this.$set(this.heights, value, '0');
                         } else {
-                            this.$set(this.heights, value, this.$refs.b.scrollHeight + 'px')
+                            this.$set(this.heights, value, 'none')
                         }
                         break;
                     case 2:
                         if (this.toggles[value]) {
                             this.$set(this.heights, value, '0');
                         } else {
-                            this.$set(this.heights, value, this.$refs.c.scrollHeight + 'px')
+                            this.$set(this.heights, value, 'none')
                         }
                         break;
                     case 3:
                         if (this.toggles[value]) {
                             this.$set(this.heights, value, '0');
                         } else {
-                            this.$set(this.heights, value, this.$refs.d.scrollHeight + 'px')
+                            this.$set(this.heights, value, 'none')
                         }
                         break;
                     case 4:
                         if (this.toggles[value]) {
                             this.$set(this.heights, value, '0');
                         } else {
-                            this.$set(this.heights, value, this.$refs.e.scrollHeight + 'px')
+                            this.$set(this.heights, value, 'none')
                         }
                         break;
                     case 5:
                         if (this.toggles[value]) {
                             this.$set(this.heights, value, '0');
                         } else {
-                            this.$set(this.heights, value, this.$refs.f.scrollHeight + 'px')
+                            this.$set(this.heights, value, 'none')
                         }
                         break;
                     case 6:
                         if (this.toggles[value]) {
                             this.$set(this.heights, value, '0');
                         } else {
-                            this.$set(this.heights, value, this.$refs.g.scrollHeight + 'px')
+                            this.$set(this.heights, value, 'none')
                         }
                         break;
                     case 7:
                         if (this.toggles[value]) {
                             this.$set(this.heights, value, '0');
                         } else {
-                            this.$set(this.heights, value, this.$refs.h.scrollHeight + 'px')
+                            this.$set(this.heights, value,'none')
                         }
                         break;
                     default:
@@ -474,7 +474,6 @@
         background-color: #FFFFFF;
         max-height: 0;
         overflow: hidden;
-        transition: max-height .56s cubic-bezier(0.52, 0.16, 0.24, 1);
         margin: 0px 16px 4px 16px;
 
         &.expanded {
