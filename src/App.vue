@@ -1,19 +1,15 @@
 <template>
     <div id="app">
         <div class="nav-container">
-        <div id="brand">
-            <span class="moonstone-blue">974</span><span>A</span><span>Z</span><span>H</span><span>A</span><span>R</span>
-        </div>
-        <nav :class="{minimized: isMinimized, 'nav-menu-active': isMobileMenuActive}">
-            <router-link to="/" replace>Blog</router-link>
-            <router-link to="/about" replace style="margin-bottom: 27px;">About Me</router-link>
-            <router-link to="/portfolio" replace>Work</router-link>
-<!--            <div class="menu-button" :class="{change: isMobileMenuActive, 'menu-visible': isMinimized}"-->
-<!--                 @click.prevent="toggleMobileMenu">-->
-<!--                <div class="bar1"></div>-->
-<!--                <div class="bar2"></div>-->
-<!--            </div>-->
-        </nav>
+            <div id="brand">
+                <span class="moonstone-blue">974</span><span>A</span><span>Z</span><span>H</span><span>A</span><span>R</span>
+            </div>
+            <nav :class="{minimized: isMinimized, 'nav-menu-active': isMobileMenuActive}">
+                <router-link to="/" replace>Blog</router-link>
+                <router-link to="/about" replace style="margin-bottom: 27px;">About Me</router-link>
+                <router-link to="/portfolio" replace>Work</router-link>
+
+            </nav>
         </div>
         <router-view/>
     </div>
@@ -56,10 +52,14 @@
     $color-accent: #f23c50;
 
     #app {
+        padding: 20px 0 0 0;
         font-family: Helvetica, Arial, sans-serif;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
         color: $color-dark;
+        display: grid;
+        grid-template-columns: 200px 1fr;
+        grid-template-areas: "nav content";
     }
 
     .container {
@@ -94,7 +94,7 @@
         box-shadow: 0 2px 0 0 currentColor;
         color: $color-primary;
         text-decoration: none;
-        transition: color .2s cubic-bezier(.47,0,.74,.71),font-size .2s cubic-bezier(.47,0,.74,.71);
+        transition: color .2s cubic-bezier(.47, 0, .74, .71), font-size .2s cubic-bezier(.47, 0, .74, .71);
         /*-webkit-tap-highlight-color: transparent;*/
 
         &:hover {
@@ -103,22 +103,25 @@
 
         &:active {
             color: $color-primary;
-        } &:focus {
+        }
+
+        &:focus {
             color: $color-primary;
         }
     }
 
     .nav-container {
+        grid-area: nav;
         display: flex;
-        align-items: flex-start;
-        justify-content: space-around;
-        padding: 36px 31px 45px 0px;
+        align-items: flex-end;
+        flex-direction: column;
+        padding: 36px 0px 45px 0px;
     }
 
     nav {
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
+        align-items: flex-end;
         transition: height .5s cubic-bezier(0.52, 0.16, 0.24, 1);
 
         a {
@@ -126,7 +129,7 @@
             margin: 8px 0px;
             font-family: 'inria_sansbold';
             font-weight: bold;
-            font-size: 20px;
+            font-size: 22px;
             color: $color-dark;
             text-decoration: none;
             display: inline-block;
@@ -165,7 +168,6 @@
     }
 
     #brand {
-        align-self: center;
         font-family: 'disposabledroid_bbbold';
         font-size: 40px;
         background-color: $color-primary;
@@ -174,13 +176,12 @@
         box-shadow: 0.22rem 0.22rem 0 $color-dark;
         transform: skew(0deg, -5deg) scaleX(0.9);
         user-select: none;
-
+margin: 0px 0px 30px;
     }
 
     .moonstone-blue {
         color: $color-light
     }
-
 
 
     .menu-button {
@@ -304,5 +305,38 @@
 
     }
 
+    @media screen and (max-width: 900px) {
+        #app {
+            padding: 0;
+            grid-template-rows: 200px;
+            grid-template-columns: 1fr;
+            grid-template-areas: "nav"
+        "content";
+        }
 
+        .nav-container {
+            grid-area: nav;
+            display: flex;
+            flex-direction: row;
+
+            align-items: flex-start;
+            justify-content: space-around;
+            padding: 36px 31px 45px 0px;
+        }
+        nav {
+            flex-direction: column;
+            align-items: flex-start;
+            a {
+                user-select: none;
+                margin: 8px 0px;
+                font-family: 'inria_sansbold';
+                font-weight: bold;
+                font-size: 20px;}
+        }
+
+        #brand {
+            align-self: center;
+            margin: 0;
+        }
+    }
 </style>

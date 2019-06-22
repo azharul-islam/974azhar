@@ -16,5 +16,6 @@ export default {
 
 <style lang="scss">
 .blog {
+  grid-area: content;
 }
 </style>

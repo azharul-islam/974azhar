@@ -1,5 +1,5 @@
 <template>
-    <div class="about">
+    <div class="work">
 
         <h2 class="accordion-header container collapser" @click="toggleCollapsible(0)" :class="{expanded: toggles[0]}">Mobile Apps <span
                 class="chevron bottom"
@@ -9,6 +9,7 @@
             <h3>Alaqat</h3>
             <p>Android app developed for a media company that provides services like promotions, video productions &
                 social media influencers coverage.</p>
+            <p>Stack: Java (Android Studio)</p>
             <swiper :options="swiperOption" ref="mySwiper">
                 <swiper-slide class="swiper-item"><img src="../assets/portfolio/alaqat/1.png" alt="">
                 </swiper-slide>
@@ -20,6 +21,7 @@
             <h3>Droobi</h3>
             <p>An app designed & developed by me during my full-time position at Droobi Health. It was an mHealth
                 mobile app for Diabetes Management.</p>
+            <p>Stack: React Native, NodeJS, Microservices, MongoDB</p>
             <swiper :options="swiperOption" ref="mySwiper">
                 <swiper-slide class="swiper-item"><img src="../assets/portfolio/droobi/1.png" alt="">
                 </swiper-slide>
@@ -405,7 +407,8 @@
 <style lang="scss" scoped>
     $color-dark: #1c4e6c;
 
-    .about {
+    .work {
+        grid-area: content;
         margin: 10px 0 20px 0;
 
         display: grid;

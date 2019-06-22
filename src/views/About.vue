@@ -2,12 +2,14 @@
     <div class="about">
         <div class="container talk-bubble tri-right left-top">
 <!--            <span class="container header">About Me</span>-->
-            <p>Hi! 👋🏻 I'm Azharul Islam, a full-stack Software Developer based in Qatar,
-                specialised in Mobile and Web apps.
-                <br><br>
-                You can reach out to me on <a href="mailto:azhar.i@outlook.com?Subject=Hello" target="_top">azhar.i@outlook.com</a> or <a href="https://wa.me/97433338469" title="Text on WhatsApp">whatsapp</a> me on +974 3333 8469.</p>
-
+            <p>Hi! 👋🏻 My name is Azharul Islam. I'm a professional full-stack Software Developer since 2016, based in Qatar.
+                specialised in Mobile and Web apps.</p>
             <img src="../assets/azhar.jpg" height="100"/>
+        </div>
+
+        <div class="container talk-bubble">
+            To get in touch you can <a href="mailto:azhar.i@outlook.com?Subject=Hello" target="_top">mail</a> me on azhar.i@outlook.com or <a href="https://wa.me/97433338469" title="Text on WhatsApp">whatsapp</a> me on +974 3333 8469.
+
         </div>
     </div>
 </template>
@@ -21,24 +23,34 @@
     }
 
     .talk-bubble {
-        margin:  0 90px 40px 35px;
+        margin:  0 90px 10px 35px;
         display: inline-block;
         position: relative;
         height: auto;
+
+        font-size: 17px;
+        line-height: 1.7;
+
+        a {
+            box-shadow: 0 2px 0 0 currentColor;
+
+        }
+
     }
 
     .about {
+        grid-area: content;
+        font-family: 'inria_sansregular', sans-serif;
+
         margin: 10px 0 0 0;
         position: relative;
         display: grid;
-        grid-template-columns: minmax(200px, 500px);
+        grid-template-columns: minmax(200px, 700px);
         justify-content: center;
     }
 
     p {
-        font-family: 'inria_sansregular', sans-serif;
-        font-size: 18px;
-        line-height: 1.7;
+
         margin-block-start: 0em;
         margin-block-end: 0.8em;
         margin-inline-start: 0px;
@@ -64,6 +76,7 @@
 
     img {
         border-radius: 50%;
+        border: 2px solid #efefef;
     }
 
     .tri-right.left-top:before {
@@ -92,5 +105,21 @@
         border-color: white transparent transparent transparent;
     }
 
+    @media screen and (min-width: 992px) {
+        .talk-bubble {
+            margin:  0 90px 10px 35px;
+            display: inline-block;
+            position: relative;
+            height: auto;
+            font-size: 21px;
+            line-height: 1.7;
+
+            a {
+                box-shadow: 0 2px 0 0 currentColor;
+            }
+
+        }
+
+    }
 
 </style>
